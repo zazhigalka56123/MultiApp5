@@ -41,9 +41,8 @@ public class GameView extends View {
     Bitmap body_h = BitmapFactory.decodeResource(getResources(), R.drawable.body_left_and_right);
     Bitmap body_v = BitmapFactory.decodeResource(getResources(), R.drawable.body_up_and_down);
 
-    //    Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.bg);
-    //    Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.euro);
-    //    Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.baks);
+//        Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.euro);
+//        Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.baks);
     Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.gold);
     Bitmap apple = BitmapFactory.decodeResource(getResources(), R.drawable.diamond);
     Bitmap logo = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
