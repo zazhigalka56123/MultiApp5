@@ -40,15 +40,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    //onesignal
-    implementation 'com.onesignal:OneSignal:3.15.2'
-
-    //material design
-    implementation 'com.google.android.material:material:1.2.1'
-
-    //network
-    implementation 'com.android.volley:volley:1.1.1'
-
-    //facebook sdk
     implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.onesignal:OneSignal:3.15.2'
 }
