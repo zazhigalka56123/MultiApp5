@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:fullBackupContent">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.main.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/AppTheme.Launcher" />
+        <activity
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.main.NetworkFalseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/AppTheme.Launcher.Splash" />
+        <activity
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/AppTheme.Launcher.Splash" />
+        <activity
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.splash.SplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/AppTheme.Launcher.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
