@@ -41,12 +41,10 @@ public class GameView extends View {
     Bitmap body_h = BitmapFactory.decodeResource(getResources(), R.drawable.body_left_and_right);
     Bitmap body_v = BitmapFactory.decodeResource(getResources(), R.drawable.body_up_and_down);
 
-//        Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.euro);
-//        Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.baks);
-    Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.gold);
+    Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.card_back);
+
     Bitmap apple = BitmapFactory.decodeResource(getResources(), R.drawable.diamond);
     Bitmap logo = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
-
 
     private int timerInterval = 200;
     private int stage = -10;
@@ -251,6 +249,7 @@ public class GameView extends View {
 
         p.setARGB(255, 0, 0, 0);
         canvas.drawBitmap(background, (float) (getWidth() - background.getWidth()) / 2, (float) (getHeight() - background.getHeight()) / 2, p);
+        canvas.drawBitmap(Bitmap.createScaledBitmap(background, getWidth(), getHeight(), false), 0f, 0f, p);
 
         p.setARGB(40, 0, 0, 0);
 
