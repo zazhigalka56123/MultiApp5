@@ -10,9 +10,9 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logo"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         android:usesCleartextTraffic="true"
@@ -33,7 +33,7 @@
         <activity
             android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AppTheme.Launcher.Splash" />
+            android:theme="@style/AppTheme.Launcher" />
         <activity
             android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.splash.SplashActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"

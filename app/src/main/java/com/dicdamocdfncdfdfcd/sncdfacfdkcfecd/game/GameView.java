@@ -1,109 +1,81 @@
 package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.view.View;
 
 import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R;
 
+import java.util.LinkedList;
 import java.util.Random;
 
-@SuppressLint("ViewConstructor")
+
 public class GameView extends View {
 
-    @SuppressLint("StaticFieldLeak")
-    static Context cont;
+    Context cont;
 
-    Bitmap block1 = BitmapFactory.decodeResource(getResources(), R.drawable.purple_block);
-    Bitmap block2 = BitmapFactory.decodeResource(getResources(), R.drawable.dkblu_block);
-    Bitmap block3 = BitmapFactory.decodeResource(getResources(), R.drawable.orange_block);
-    Bitmap block4 = BitmapFactory.decodeResource(getResources(), R.drawable.green_block);
-    Bitmap block5 = BitmapFactory.decodeResource(getResources(), R.drawable.red_block);
-    Bitmap block6 = BitmapFactory.decodeResource(getResources(), R.drawable.ltblu_block);
-    Bitmap block7 = BitmapFactory.decodeResource(getResources(), R.drawable.yelow_block);
-    Bitmap currentBlock;
-    Bitmap smallBlock1 = BitmapFactory.decodeResource(getResources(), R.drawable.purpleblock);
-    Bitmap smallBlock2 = BitmapFactory.decodeResource(getResources(), R.drawable.dkblublock);
-    Bitmap smallBlock3 = BitmapFactory.decodeResource(getResources(), R.drawable.orangeblock);
-    Bitmap smallBlock4 = BitmapFactory.decodeResource(getResources(), R.drawable.greenblock);
-    Bitmap smallBlock5 = BitmapFactory.decodeResource(getResources(), R.drawable.redblock);
-    Bitmap smallBlock6 = BitmapFactory.decodeResource(getResources(), R.drawable.ltblublock);
-    Bitmap smallBlock7 = BitmapFactory.decodeResource(getResources(), R.drawable.yelowblock);
-    Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.bg);
-
-    private Bitmap[] block = {block1, block2, block3, block4, block5, block6, block7};
-    private Bitmap[] smallBlock = {smallBlock1, smallBlock2, smallBlock3, smallBlock4, smallBlock5, smallBlock6, smallBlock7};
+    LinkedList<Integer> xm = new LinkedList<>();
+    LinkedList<Integer> ym = new LinkedList<>();
+    LinkedList<Boolean> turn = new LinkedList<>();
 
     Paint p = new Paint();
 
+    MediaPlayer hrum;
 
-    private int width;
-    private int height;
-    private int menu = (smallBlock1.getWidth() + 5) * 5;
-    private int size = block1.getWidth() + 10;
-    private int hei;
-    private int[] futureShapes;
+    Bitmap head_down = BitmapFactory.decodeResource(getResources(), R.drawable.head_down);
+    Bitmap head_up = BitmapFactory.decodeResource(getResources(), R.drawable.head_up);
+    Bitmap head_right = BitmapFactory.decodeResource(getResources(), R.drawable.head_right);
+    Bitmap head_left = BitmapFactory.decodeResource(getResources(), R.drawable.head_left);
 
-    public static int score = 0;
-    public static int stage = -10;
-    public static int counter = 0;
-    public static int timerInterval = 25;
-    public static int h;
-    public static int w = 10;
-    public static int mainBlockX;
-    public static int mainBlockY = -1;
-    public static int direction = 0;
-    public static int shapeNum = 0;
+    Bitmap head_down2 = BitmapFactory.decodeResource(getResources(), R.drawable.head_down_rot);
+    Bitmap head_up2 = BitmapFactory.decodeResource(getResources(), R.drawable.head_up_rot);
+    Bitmap head_right2 = BitmapFactory.decodeResource(getResources(), R.drawable.head_right_rot);
+    Bitmap head_left2 = BitmapFactory.decodeResource(getResources(), R.drawable.head_left_rot);
 
-    public static int[][] area;
-    public static int[][][][] shape = {
-            {
-                    {{0, 1, -1, 0}, {0, 0, 0, -1}},
-                    {{0, 0, 0, 1}, {0, 1, -1, 0}},
-                    {{0, 1, -1, 0}, {0, 0, 0, 1}},
-                    {{0, 0, 0, -1}, {0, 1, -1, 0}}
-            },
-            {
-                    {{0, 0, 0, 1}, {0, -1, 1, -1}},
-                    {{0, -1, 1, 1}, {0, 0, 0, 1}},
-                    {{0, 0, 0, -1}, {0, -1, 1, 1}},
-                    {{0, -1, 1, -1}, {0, 0, 0, -1}}
-            },
-            {
-                    {{0, 0, 0, -1}, {0, -1, 1, -1}},
-                    {{0, 1, -1, 1}, {0, 0, 0, -1}},
-                    {{0, 0, 0, 1}, {0, -1, 1, 1}},
-                    {{0, 1, -1, -1}, {0, 0, 0, 1}}
-            },
-            {
-                    {{0, 0, 1, -1}, {0, -1, -1, 0}},
-                    {{0, -1, -1, 0}, {0, 0, -1, 1}}
-            },
-            {
-                    {{0, 0, -1, 1}, {0, -1, -1, 0}},
-                    {{0, 1, 1, 0}, {0, 0, -1, 1}}
-            },
-            {
-                    {{0, 0, 0, 0}, {0, -1, 1, -2}},
-                    {{0, -1, 1, 2}, {0, 0, 0, 0}}
-            },
-            {
-                    {{0, 1, 0, 1}, {0, 1, 1, 0}}
-            }
-    };
+    Bitmap body_h = BitmapFactory.decodeResource(getResources(), R.drawable.body_left_and_right);
+    Bitmap body_v = BitmapFactory.decodeResource(getResources(), R.drawable.body_up_and_down);
+
+    Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.bg);
+    Bitmap apple = BitmapFactory.decodeResource(getResources(), R.drawable.apple);
+    Bitmap logo = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
+
+
+    private int timerInterval = 200;
+    private int stage = -10;
+    private int nx = 5;
+    private int ny = 5;
+    private int size = body_h.getWidth() - 3;
+    public static int vx = 0;
+    public static int vy = 0;
+    public static int activeVx = 0;
+    public static int activeVy = 0;
+    private int headX = -1;
+    private int headY = -1;
+    private int appleX = -2;
+    private int appleY = -2;
 
     public GameView(Context context) {
         super(context);
         cont = context;
         p.setAntiAlias(true);
-        p.setTextSize(size);
-        GameActivity.loadData(context);
+
+        xm.add(-2);
+        xm.add(-2);
+        ym.add(-2);
+        ym.add(-2);
+
+        turn.add(true);
+        turn.add(true);
+
+        hrum = MediaPlayer.create(cont, R.raw.apple_sound);
+
+        GameActivity.loadData(cont);
 
         Timer t = new Timer();
         t.start();
@@ -116,10 +88,7 @@ public class GameView extends View {
 
         @Override
         public void onTick(long millisUntilFinished) {
-
             update();
-
-
         }
 
         @Override
@@ -127,253 +96,207 @@ public class GameView extends View {
         }
     }
 
-    //----------------------------------------------------------------------------------------------
+    protected void update() {
+
+        if (stage < -1) {
+
+            if (getWidth() != 0 && getHeight() != 0)
+                stage++;
+
+            if (stage == -1) {
+                nx = getWidth() / size;
+                ny = getHeight() / size;
+
+                headX = nx / 2;
+                headY = ny / 2;
+
+                appleX = headX;
+                appleY = headY;
+
+                spawn();
+
+                stage = 0;
+            }
+        } else {
+
+            for (int i = xm.size() - 1; i > 0; i--) {
+                xm.set(i, xm.get(i - 1));
+                ym.set(i, ym.get(i - 1));
+                turn.set(i, turn.get(i - 1));
+            }
+
+            xm.set(0, headX);
+            ym.set(0, headY);
+
+            if (vy == 0)
+                turn.set(0, true);
+            else
+                turn.set(0, false);
+
+            headX += vx;
+            headY += vy;
+
+            activeVx = vx;
+            activeVy = vy;
+
+            if (headX == -1) headX = nx - 1;
+            if (headY == -1) headY = ny - 1;
+            if (headX == nx) headX = 0;
+            if (headY == ny) headY = 0;
+
+            appleSpawn();
+
+            crash();
+        }
+
+        invalidate();
+    }
+
+    protected void appleSpawn() {
+        if (headX == appleX && headY == appleY) {
+
+            spawn();
+
+            if (nx * ny - 5 > xm.size()) {
+
+                xm.add(xm.get(xm.size() - 1));
+                ym.add(ym.get(ym.size() - 1));
+
+                turn.add(turn.get(turn.size() - 1));
+
+            }
+
+            hrum.start();
+        }
+    }
+
+    protected void spawn() {
+
+        Random rnd = new Random();
+        boolean out;
+        do {
+            out = true;
+
+            appleX = rnd.nextInt(nx);
+            appleY = rnd.nextInt(ny);
+
+            for (int i = 0; i < xm.size(); i++) {
+                if (appleX == xm.get(i) && appleY == ym.get(i)) out = false;
+            }
+            if (appleX == headX && appleY == headY) out = false;
+
+
+        } while (!out);
+    }
+
+    protected void crash() {
+        boolean crash;
+        crash = false;
+
+        if (vx != 0 || vy != 0)
+            for (int i = 0; i < xm.size(); i++) {
+                if (headX == xm.get(i) && headY == ym.get(i)) {
+                    crash = true;
+                }
+            }
+
+        if (crash) {
+
+            if (GameActivity.maxScore < xm.size()) {
+                GameActivity.maxScore = xm.size();
+                GameActivity.saveData(cont);
+            }
+
+            xm.clear();
+            ym.clear();
+
+
+            headX = nx / 2;
+            headY = ny / 2;
+
+            spawn();
+
+            vx = 0;
+            vy = 0;
+
+            xm.add(-2);
+            xm.add(-2);
+            ym.add(-2);
+            ym.add(-2);
+
+            turn.add(true);
+            turn.add(true);
+        }
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (stage >= 0) {
-
             drawTable(canvas);
-
-            drawMatrix(canvas);
-
-            drawMenu(canvas);
-
-            for (int i = 0; i < shape[shapeNum][direction][0].length; i++) {
-                drawPix(canvas, mainBlockX + shape[shapeNum][direction][0][i], mainBlockY + shape[shapeNum][direction][1][i], currentBlock);
-            }
-
+            drawApple(canvas);
+            drawSnake(canvas);
             drawScore(canvas);
-
         } else {
+            vx = 0;
+            vy = 0;
             canvas.drawARGB(255, 0, 0, 0);
+            canvas.drawBitmap(logo, (float) (getWidth() - logo.getWidth()) / 2, (float) (getHeight() - logo.getHeight()) / 2, p);
         }
-    }
-
-    protected void update() {
-
-        if (stage < -1) {
-            if (getWidth() != 0 && getHeight() != 0)
-                stage++;
-            if (stage == -1) {
-
-                width = getWidth() - menu;
-                height = getHeight();
-
-                w = width / size;
-                h = height / size;
-
-                hei = getHeight() / (menu / 5);
-
-                area = new int[w][h];
-
-                Random rnd = new Random();
-
-                futureShapes = new int[3];
-
-                for (int i = 0; i < futureShapes.length; i++)
-                    futureShapes[i] = rnd.nextInt(block.length);
-
-                newShape();
-                stage = 0;
-            }
-        } else {
-            if (stage != 1) {
-                if (counter == 0) {
-
-                    stopCheck();
-
-                }
-                counter++;
-                counter %= 10;
-
-                crashCheck();
-            }
-
-        }
-        invalidate();
-    }
-
-    protected void deleteLayer() {
-        boolean t;
-
-        for (int i1 = 0; i1 < h; i1++) {
-
-            t = true;
-
-            for (int i = 0; i < w; i++) {
-                if (area[i][i1] == 0) {
-                    t = false;
-                    break;
-                }
-            }
-
-            if (t) {
-                for (int j1 = i1; j1 > 0; j1--) {
-                    for (int j = 0; j < w; j++) {
-                        area[j][j1] = area[j][j1 - 1];
-                    }
-
-                }
-                score++;
-            }
-        }
-    }
-
-    protected void stopCheck() {
-
-        boolean t = false;
-
-        for (int i = 0; i < shape[shapeNum][direction][0].length; i++) {
-            if (mainBlockY + shape[shapeNum][direction][1][i] >= h - 1) {
-                t = true;
-                break;
-            }
-            if (mainBlockY + shape[shapeNum][direction][1][i] + 1 < h && mainBlockY + shape[shapeNum][direction][1][i] + 1 >= 0)
-                if (area[mainBlockX + shape[shapeNum][direction][0][i]][mainBlockY + shape[shapeNum][direction][1][i] + 1] != 0) {
-                    t = true;
-                    break;
-                }
-        }
-
-        if (t) {
-
-            for (int i = 0; i < shape[shapeNum][direction][0].length; i++) {
-                if (mainBlockY + shape[shapeNum][direction][1][i] < h)
-                    if (mainBlockX + shape[shapeNum][direction][0][i] < h && mainBlockY + shape[shapeNum][direction][1][i] >= 0)
-                        area[mainBlockX + shape[shapeNum][direction][0][i]][mainBlockY + shape[shapeNum][direction][1][i]] = shapeNum + 1;
-            }
-
-            deleteLayer();
-
-            newShape();
-        } else
-            mainBlockY++;
-    }
-
-    protected void crashCheck() {
-        boolean t = false;
-        for (int[] ints : area) {
-            if (ints[0] != 0) {
-                t = true;
-                break;
-            }
-        }
-
-        if (t) {
-            stage = 1;
-        }
-    }
-
-    protected void newShape() {
-
-        Random rnd = new Random();
-
-        currentBlock = block[futureShapes[0]];
-        shapeNum = futureShapes[0];
-
-        System.arraycopy(futureShapes, 1, futureShapes, 0, futureShapes.length - 1);
-
-        futureShapes[futureShapes.length - 1] = rnd.nextInt(block.length);
-        timerInterval = 50;
-        direction = 0;
-        mainBlockY = -4;
-        mainBlockX = w / 2;
-    }
-
-    protected void drawPix(Canvas canvas, int x, int y, Bitmap b) {
-        if (y < h && y >= 0)
-            canvas.drawBitmap(b, 5 + (float) width * x / w, 5 + (float) height * y / h, p);
-    }
-
-    protected void drawMenuPix(Canvas canvas, int x, int y, Bitmap b) {
-        canvas.drawBitmap(b, 5 + width + (float) menu * x / 5, 5 + (float) getHeight() * y / hei, p);
-    }
-
-    protected void drawMatrix(Canvas canvas) {
-
-        for (int i = 0; i < area.length; i++) {
-            for (int j = 0; j < area[i].length; j++) {
-                if (area[i][j] != 0)
-                    drawPix(canvas, i, j, block[area[i][j] - 1]);
-            }
-        }
-    }
-
-    protected void drawMenu(Canvas canvas) {
-
-        for (int j = 0; j < futureShapes.length; j++)
-            for (int i = 0; i < shape[shapeNum][direction][0].length; i++) {
-                drawMenuPix(canvas, 2 + shape[futureShapes[j]][0][0][i], 3 + 5 * j + shape[futureShapes[j]][0][1][i], smallBlock[futureShapes[j]]);
-            }
     }
 
     protected void drawTable(Canvas canvas) {
 
-        p.setColor(Color.BLACK);
-        canvas.drawRect(0, 0, width, getHeight(), p);
+        p.setARGB(255, 0, 0, 0);
+        canvas.drawBitmap(background, (float) (getWidth() - background.getWidth()) / 2, (float) (getHeight() - background.getHeight()) / 2, p);
 
-        p.setColor(Color.DKGRAY);
-        canvas.drawRect(width, 0, getWidth(), getHeight(), p);
+        p.setARGB(40, 0, 0, 0);
 
-//        canvas.drawBitmap(background, width - background.getWidth(), getHeight() - background.getHeight(), p);
-        canvas.drawBitmap(Bitmap.createScaledBitmap(background, width, getHeight(), false), 0, 0, p);
+        for (int i = 0; i < nx; i++)
+            canvas.drawLine((float) getWidth() * i / nx, 0, (float) getWidth() * i / nx, getHeight(), p);
+        for (int i = 0; i < ny; i++)
+            canvas.drawLine(0, (float) getHeight() * i / ny, getWidth(), (float) getHeight() * i / ny, p);
+    }
 
+    protected void drawSnake(Canvas canvas) {
+
+        for (int i = xm.size() - 1; i >= 0; i--) {
+            if (turn.get(i))
+                canvas.drawBitmap(body_h, (float) getWidth() * xm.get(i) / nx, (float) getHeight() * ym.get(i) / ny, p);
+            else
+                canvas.drawBitmap(body_v, (float) getWidth() * xm.get(i) / nx, (float) getHeight() * ym.get(i) / ny, p);
+        }
+
+        if ((headX - appleX) * (headX - appleX) <= 4 && (headY - appleY) * (headY - appleY) <= 4) {
+            if (vx == 1 || (vx == 0 && vy == 0))
+                canvas.drawBitmap(head_right, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+            if (vx == -1)
+                canvas.drawBitmap(head_left, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+            if (vy == 1)
+                canvas.drawBitmap(head_down, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+            if (vy == -1)
+                canvas.drawBitmap(head_up, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+        } else {
+            if (vx == 1 || (vx == 0 && vy == 0))
+                canvas.drawBitmap(head_right2, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+            if (vx == -1)
+                canvas.drawBitmap(head_left2, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+            if (vy == 1)
+                canvas.drawBitmap(head_down2, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+            if (vy == -1)
+                canvas.drawBitmap(head_up2, (float) getWidth() * headX / nx, (float) getHeight() * headY / ny, p);
+        }
+    }
+
+    protected void drawApple(Canvas canvas) {
+        p.setColor(Color.RED);
+        canvas.drawBitmap(apple, (float) getWidth() * appleX / nx, (float) getHeight() * appleY / ny, p);
     }
 
     protected void drawScore(Canvas canvas) {
-        p.setARGB(255, 0, 0, 0);
-
-        p.setARGB(255, 255, 255, 255);
-        if (stage == 1) {
-            if (GameActivity.maxScore < score)
-                canvas.drawText("New record: " + score, (float) width / 2 - 220, (float) getHeight() / 2, p);
-            canvas.drawText("Tap to restart", (float) width / 2 - 225, (float) getHeight() / 2 + size, p);
-        }
-    }
-
-    public static boolean restart() {
-
-        for (int i = 0; i < w; i++) {
-            for (int j = 0; j < h; j++) {
-                area[i][j] = 0;
-            }
-        }
-
-        if (score > GameActivity.maxScore) {
-            GameActivity.maxScore = score;
-            GameActivity.saveData(cont);
-        }
-
-        stage = 0;
-        score = 0;
-
-        return false;
-    }
-
-    public static boolean rightCheck(int x, int y) {
-
-        if (x < w - 1)
-            if (x == w - 2)
-                return true;
-            else return area[x + 1][y] == 0;
-        else
-            return false;
-    }
-
-    public static boolean leftCheck(int x, int y) {
-        if (x > 0)
-            if (x == 1)
-                return true;
-            else return area[x - 1][y] == 0;
-        else
-            return false;
-    }
-
-    public static boolean rotateCheck(int x, int y) {
-        if (x >= 0 && x < w && y >= 0 && y < h)
-            return area[x][y] == 0;
-        else
-            return false;
+        p.setARGB(150, 255, 255, 255);
+        p.setTextSize(size);
+        canvas.drawText("score: " + (xm.size() - 2), 10, getHeight() - size - 13, p);
+        canvas.drawText("max score: " + (GameActivity.maxScore - 2), 10, getHeight() - 13, p);
     }
 }

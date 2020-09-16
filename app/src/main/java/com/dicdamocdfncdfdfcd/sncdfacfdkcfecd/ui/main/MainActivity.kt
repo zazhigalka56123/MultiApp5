@@ -56,7 +56,7 @@ class MainActivity : Activity() {
             toScroll(kart)
         }
 
-        webView = findViewById(R.id.web_view) as WebView?
+        webView = findViewById(R.id.web_view)
 
         webView?.scrollBarStyle = WebView.SCROLLBARS_OUTSIDE_OVERLAY
         URL = getURL()

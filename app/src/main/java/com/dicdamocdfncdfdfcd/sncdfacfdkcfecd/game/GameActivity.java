@@ -16,15 +16,6 @@ import android.widget.FrameLayout;
 
 import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R;
 
-import static com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameView.direction;
-import static com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameView.mainBlockX;
-import static com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameView.mainBlockY;
-import static com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameView.shape;
-import static com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameView.shapeNum;
-import static com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameView.counter;
-import static com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameView.stage;
-
-
 public class GameActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
     public GestureDetectorCompat gd;
@@ -34,7 +25,7 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER_PORTRAIT);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER_LANDSCAPE);
         setContentView(R.layout.activity_game);
         ((FrameLayout) findViewById(R.id.idFlame)).addView(new GameView(this));
 
@@ -42,7 +33,7 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
         gd.setOnDoubleTapListener(this);
     }
 
-    static int maxScore = 0;
+    static int maxScore = 2;
     static String SAVED_NUM = "NUMBER";
     static SharedPreferences sharedPreferences;
 
@@ -55,8 +46,9 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
 
     static void loadData(Context context) {
         sharedPreferences = context.getSharedPreferences(SAVED_NUM, MODE_PRIVATE);
-        maxScore = sharedPreferences.getInt(SAVED_NUM, 0);
+        maxScore = sharedPreferences.getInt(SAVED_NUM, 2);
     }
+    //==============================================================================================
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -64,44 +56,8 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
         return super.onTouchEvent(event);
     }
 
-    void right() {
-        boolean t = true;
-        for (int i = 0; i < shape[shapeNum][direction][0].length; i++) {
-            if (!GameView.rightCheck(mainBlockX + shape[shapeNum][direction][0][i], mainBlockY + shape[shapeNum][direction][1][i])) {
-                t = false;
-                break;
-            }
-        }
-        if (t) {
-            counter = 1;
-            mainBlockX++;
-        }
-    }
-
-    void left() {
-        boolean t = true;
-        for (int i = 0; i < shape[shapeNum][direction][0].length; i++) {
-            if (!GameView.leftCheck(mainBlockX + shape[shapeNum][direction][0][i], mainBlockY + shape[shapeNum][direction][1][i])) {
-                t = false;
-                break;
-            }
-        }
-        if (t) {
-            counter = 1;
-            mainBlockX--;
-        }
-    }
-
-    void up() {
-    }
-
-    void down() {
-    }
-
-    //==============================================================================================
     private static final int SWIPE_THRESHOLD = 100;
     private static final int SWIPE_VELOCITY_THRESHOLD = 100;
-
 
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
@@ -112,17 +68,29 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
             if (Math.abs(diffX) > Math.abs(diffY)) {
                 if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
                     if (diffX > 0) {
-                        right();
+                        if (GameView.activeVx != -1) {
+                            GameView.vx = 1;
+                            GameView.vy = 0;
+                        }
                     } else {
-                        left();
+                        if (GameView.activeVx != 1) {
+                            GameView.vx = -1;
+                            GameView.vy = 0;
+                        }
                     }
                     result = true;
                 }
             } else if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                 if (diffY > 0) {
-                    down();
+                    if (GameView.activeVy != -1) {
+                        GameView.vx = 0;
+                        GameView.vy = 1;
+                    }
                 } else {
-                    up();
+                    if (GameView.activeVy != 1) {
+                        GameView.vx = 0;
+                        GameView.vy = -1;
+                    }
                 }
                 result = true;
             }
@@ -143,27 +111,6 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
 
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
-        if (stage == 1) {
-            GameView.restart();
-        } else {
-            boolean t = true;
-
-            int d = direction + 1;
-            d %= shape[shapeNum].length;
-
-            for (int i = 0; i < shape[shapeNum][direction][0].length; i++) {
-                if (!GameView.rotateCheck(mainBlockX + shape[shapeNum][d][0][i], mainBlockY + shape[shapeNum][d][1][i])) {
-                    t = false;
-                    break;
-                }
-            }
-
-            if (t) {
-                counter = 1;
-                direction++;
-                direction %= shape[shapeNum].length;
-            }
-        }
         return false;
     }
 
