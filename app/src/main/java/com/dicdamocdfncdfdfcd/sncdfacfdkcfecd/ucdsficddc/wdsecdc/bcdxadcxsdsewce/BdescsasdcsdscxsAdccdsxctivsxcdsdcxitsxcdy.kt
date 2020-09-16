@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.base
+package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.bcdxadcxsdsewce
 
 import android.app.Activity
 import android.content.Intent
@@ -10,13 +10,13 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R
 
 
-open class BaseActivity : Activity() {
+open class BdescsasdcsdscxsAdccdsxctivsxcdsdcxitsxcdy : Activity() {
     private val keyboardLayoutListener = OnGlobalLayoutListener {
         val heightDiff = rootLayout!!.rootView.height - rootLayout!!.height
         val contentViewTop =
             window.findViewById<View>(Window.ID_ANDROID_CONTENT).top
         val broadcastManager =
-            LocalBroadcastManager.getInstance(this@BaseActivity)
+            LocalBroadcastManager.getInstance(this@BdescsasdcsdscxsAdccdsxctivsxcdsdcxitsxcdy)
         if (heightDiff <= contentViewTop) {
             onHideKeyboard()
             val intent = Intent("KeyboardWillHide")

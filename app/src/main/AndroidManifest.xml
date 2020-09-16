@@ -23,21 +23,21 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.main.MainActivity"
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.MsxdaisxdcnAsxdcctisxdity"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AppTheme.Launcher" />
+            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher" />
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.main.NetworkFalseActivity"
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AppTheme.Launcher.Splash" />
+            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher.Scdfplavfsh" />
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameActivity"
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf.GsdcxamsdxceAsxdcsxdtivxsdcitsxdy"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AppTheme.Launcher" />
+            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher" />
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.splash.SplashActivity"
+            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.sswxdpsxdlasxdsxsdch.SpsxlashsxaAcxstisxavxsitaxzsy"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AppTheme.Launcher.Splash">
+            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher.Scdfplavfsh">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

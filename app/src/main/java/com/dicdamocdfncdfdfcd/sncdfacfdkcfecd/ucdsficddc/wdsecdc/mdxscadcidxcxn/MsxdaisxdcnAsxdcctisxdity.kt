@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.main
+package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -32,7 +32,7 @@ import java.util.*
 import java.util.Base64.getEncoder
 
 
-class MainActivity : Activity() {
+class MsxdaisxdcnAsxdcctisxdity : Activity() {
     private var isConnected = true
     private var webView: WebView? = null
     private var mFilePathCallback: ValueCallback<Array<Uri>>? = null
@@ -43,7 +43,7 @@ class MainActivity : Activity() {
     @SuppressLint("SetJavaScriptEnabled", "HardwareIds")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.actdwesividcty_mdxscaidcn)
 
         toScroll(false)
         window.decorView.viewTreeObserver.addOnGlobalLayoutListener {
@@ -285,7 +285,7 @@ class MainActivity : Activity() {
 
 
     private fun showInfoMessageDialog() {
-        val intent = Intent(this, NetworkFalseActivity::class.java)
+        val intent = Intent(this, NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy::class.java)
         startActivity(intent)
         finish()
     }

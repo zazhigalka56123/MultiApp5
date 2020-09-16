@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game;
+package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,7 +16,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 
-public class GameView extends View {
+public class GaxdcsxdcmsxdeVisxdesxdw extends View {
 
     Context cont;
 
@@ -60,7 +60,7 @@ public class GameView extends View {
     private int appleX = -2;
     private int appleY = -2;
 
-    public GameView(Context context) {
+    public GaxdcsxdcmsxdeVisxdesxdw(Context context) {
         super(context);
         cont = context;
         p.setAntiAlias(true);
@@ -75,7 +75,7 @@ public class GameView extends View {
 
         hrum = MediaPlayer.create(cont, R.raw.apple_sound);
 
-        GameActivity.loadData(cont);
+        GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.loadData(cont);
 
         Timer t = new Timer();
         t.start();
@@ -202,9 +202,9 @@ public class GameView extends View {
 
         if (crash) {
 
-            if (GameActivity.maxScore < xm.size()) {
-                GameActivity.maxScore = xm.size();
-                GameActivity.saveData(cont);
+            if (GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.maxScore < xm.size()) {
+                GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.maxScore = xm.size();
+                GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.saveData(cont);
             }
 
             xm.clear();
@@ -298,6 +298,6 @@ public class GameView extends View {
         p.setARGB(150, 255, 255, 255);
         p.setTextSize(size);
         canvas.drawText("score: " + (xm.size() - 2), 10, getHeight() - size - 13, p);
-        canvas.drawText("max score: " + (GameActivity.maxScore - 2), 10, getHeight() - 13, p);
+        canvas.drawText("max score: " + (GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.maxScore - 2), 10, getHeight() - 13, p);
     }
 }

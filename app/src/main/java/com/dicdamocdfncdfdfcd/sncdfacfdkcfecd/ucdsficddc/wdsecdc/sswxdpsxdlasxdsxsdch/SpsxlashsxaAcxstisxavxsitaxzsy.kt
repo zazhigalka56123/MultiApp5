@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.splash
+package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.sswxdpsxdlasxdsxsdch
 
 import android.content.Context
 import android.content.Intent
@@ -13,11 +13,11 @@ import com.facebook.FacebookSdk
 import com.facebook.applinks.AppLinkData
 import com.onesignal.OneSignal
 import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game.GameActivity
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.main.MainActivity
+import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf.GsdcxamsdxceAsxdcsxdtivxsdcitsxdy
+import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.MsxdaisxdcnAsxdcctisxdity
 
 
-class SplashActivity : AppCompatActivity() {
+class SpsxlashsxaAcxstisxavxsitaxzsy : AppCompatActivity() {
     private val spName: String = "CHECK"
     private val spStatus: String = "PASS"
     private val NOBOT_URL = "https://nobot"
@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.adsxwcctiwsxdvity_ssxdcplsxash)
 
         sendGet1(getString(R.string.update_bot))
     }
@@ -116,14 +116,14 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun startMain(deepString: String = "") {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, MsxdaisxdcnAsxdcctisxdity::class.java)
         intent.putExtra("url", formUrl(deepString))
         startActivity(intent)
         finish()
     }
 
     private fun startCap() {
-        val intent = Intent(this, GameActivity::class.java)
+        val intent = Intent(this, GsdcxamsdxceAsxdcsxdtivxsdcitsxdy::class.java)
         startActivity(intent)
         finish()
     }

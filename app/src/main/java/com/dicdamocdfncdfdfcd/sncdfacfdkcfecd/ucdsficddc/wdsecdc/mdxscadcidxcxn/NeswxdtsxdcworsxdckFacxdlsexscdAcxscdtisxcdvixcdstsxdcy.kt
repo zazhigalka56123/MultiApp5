@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.main
+package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn
 
 import android.app.AlertDialog
 import android.content.Context
@@ -6,12 +6,12 @@ import android.content.Intent
 import android.net.ConnectivityManager
 import android.os.Bundle
 import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ui.base.BaseActivity
+import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.bcdxadcxsdsewce.BdescsasdcsdscxsAdccdsxctivsxcdsdcxitsxcdy
 
-class NetworkFalseActivity : BaseActivity() {
+class NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy : BdescsasdcsdscxsAdccdsxctivsxcdsdcxitsxcdy() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_network_false)
+        setContentView(R.layout.aswdctidxscvitxdcy_netcdwdcork_facdcfdlsxdsce)
         showInfoMessageDialog("Check your internet connection and try again")
     }
 
@@ -38,7 +38,7 @@ class NetworkFalseActivity : BaseActivity() {
                 showInfoMessageDialog("Check your internet connection and try again")
             } else {
                 val intent =
-                    Intent(this, MainActivity::class.java)
+                    Intent(this, MsxdaisxdcnAsxdcctisxdity::class.java)
                 startActivity(intent)
                 finish()
             }

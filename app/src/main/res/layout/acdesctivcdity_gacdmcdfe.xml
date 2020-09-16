@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlack"
-    tools:context=".game.GameActivity">
+    android:background="@color/bldcsdcasxdcksx"
+    tools:context=".gcdacdcfvmcde.edcdcf.GsdcxamsdxceAsxdcsxdtivxsdcitsxdy">
 
     <FrameLayout
         android:id="@+id/idFlame"

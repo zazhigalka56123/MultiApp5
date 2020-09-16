@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.game;
+package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 
 import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R;
 
-public class GameActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
+public class GsdcxamsdxceAsxdcsxdtivxsdcitsxdy extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
     public GestureDetectorCompat gd;
 
@@ -26,8 +26,8 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER_LANDSCAPE);
-        setContentView(R.layout.activity_game);
-        ((FrameLayout) findViewById(R.id.idFlame)).addView(new GameView(this));
+        setContentView(R.layout.acdesctivcdity_gacdmcdfe);
+        ((FrameLayout) findViewById(R.id.idFlame)).addView(new GaxdcsxdcmsxdeVisxdesxdw(this));
 
         gd = new GestureDetectorCompat(this, this);
         gd.setOnDoubleTapListener(this);
@@ -48,7 +48,6 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
         sharedPreferences = context.getSharedPreferences(SAVED_NUM, MODE_PRIVATE);
         maxScore = sharedPreferences.getInt(SAVED_NUM, 2);
     }
-    //==============================================================================================
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -68,28 +67,28 @@ public class GameActivity extends AppCompatActivity implements GestureDetector.O
             if (Math.abs(diffX) > Math.abs(diffY)) {
                 if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
                     if (diffX > 0) {
-                        if (GameView.activeVx != -1) {
-                            GameView.vx = 1;
-                            GameView.vy = 0;
+                        if (GaxdcsxdcmsxdeVisxdesxdw.activeVx != -1) {
+                            GaxdcsxdcmsxdeVisxdesxdw.vx = 1;
+                            GaxdcsxdcmsxdeVisxdesxdw.vy = 0;
                         }
                     } else {
-                        if (GameView.activeVx != 1) {
-                            GameView.vx = -1;
-                            GameView.vy = 0;
+                        if (GaxdcsxdcmsxdeVisxdesxdw.activeVx != 1) {
+                            GaxdcsxdcmsxdeVisxdesxdw.vx = -1;
+                            GaxdcsxdcmsxdeVisxdesxdw.vy = 0;
                         }
                     }
                     result = true;
                 }
             } else if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                 if (diffY > 0) {
-                    if (GameView.activeVy != -1) {
-                        GameView.vx = 0;
-                        GameView.vy = 1;
+                    if (GaxdcsxdcmsxdeVisxdesxdw.activeVy != -1) {
+                        GaxdcsxdcmsxdeVisxdesxdw.vx = 0;
+                        GaxdcsxdcmsxdeVisxdesxdw.vy = 1;
                     }
                 } else {
-                    if (GameView.activeVy != 1) {
-                        GameView.vx = 0;
-                        GameView.vy = -1;
+                    if (GaxdcsxdcmsxdeVisxdesxdw.activeVy != 1) {
+                        GaxdcsxdcmsxdeVisxdesxdw.vx = 0;
+                        GaxdcsxdcmsxdeVisxdesxdw.vy = -1;
                     }
                 }
                 result = true;
