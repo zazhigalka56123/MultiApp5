@@ -44,7 +44,7 @@ public class GaxdcsxdcmsxdeVisxdesxdw extends View {
     Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.card_back);
 
     Bitmap apple = BitmapFactory.decodeResource(getResources(), R.drawable.diamond);
-    Bitmap logo = BitmapFactory.decodeResource(getResources(), R.drawable.icon);
+    Bitmap logo = BitmapFactory.decodeResource(getResources(), R.drawable.sfrednedrfvakfrevde);
 
     private int timerInterval = 200;
     private int stage = -10;

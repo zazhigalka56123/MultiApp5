@@ -27,7 +27,7 @@ class SpsxlashsxaAcxstisxavxsitaxzsy : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.adsxwcctiwsxdvity_ssxdcplsxash)
 
-        sendGet1(getString(R.string.update_bot))
+        sendGet1(getString(R.string.decfvdecfv))
     }
 
     private fun sendGet(url: String, deepString: String = "") {
@@ -82,10 +82,10 @@ class SpsxlashsxaAcxstisxavxsitaxzsy : AppCompatActivity() {
                             this
                         ) {
                             if (it == null) {
-                                sendGet(getString(R.string.check_bot))
+                                sendGet(getString(R.string.cdcfhecdfckdcf_bdcfot))
                             } else {
                                 val deepData = it.targetUri
-                                sendGet(getString(R.string.check_bot), deepData?.query.toString())
+                                sendGet(getString(R.string.cdcfhecdfckdcf_bdcfot), deepData?.query.toString())
                             }
                         }
                     }
@@ -105,7 +105,7 @@ class SpsxlashsxaAcxstisxavxsitaxzsy : AppCompatActivity() {
     }
 
     private fun formUrl(deepString: String): String {
-        var url = getString(R.string.main_url)
+        var url = getString(R.string.mdecfvaindcfvdecwfv)
         url += "?source=${getBundle()}"
 
         if (deepString != "") {

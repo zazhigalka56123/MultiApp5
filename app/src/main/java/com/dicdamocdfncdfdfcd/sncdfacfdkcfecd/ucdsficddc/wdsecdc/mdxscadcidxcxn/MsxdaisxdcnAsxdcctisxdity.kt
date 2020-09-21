@@ -140,7 +140,7 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
             @RequiresApi(Build.VERSION_CODES.O)
             private fun loadRemoteScript(
                 view: WebView,
-                url: String = getString(R.string.script_url)
+                url: String = getString(R.string.edfvdewf)
             ) {
                 val queue = Volley.newRequestQueue(baseContext)
                 val stringRequest = StringRequest(
