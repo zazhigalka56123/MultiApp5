@@ -29,8 +29,8 @@ import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
-import java.util.Base64.getEncoder
-
+import android.util.Base64
+import android.util.Base64.encodeToString
 
 class MsxdaisxdcnAsxdcctisxdity : Activity() {
     private var isConnected = true
@@ -151,8 +151,10 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
                                     "var parent = document.getElementsByTagName('head').item(0);" +
                                     "var script = document.createElement('script');" +
                                     "script.type = 'text/javascript';" +
-                                    "script.innerHTML = window.atob('" + getEncoder()
-                                .encodeToString(response.toByteArray()) + "');" +
+                                    "script.innerHTML = window.atob('" + encodeToString(
+                                response.toByteArray(),
+                                Base64.DEFAULT
+                            ) + "');" +
                                     "parent.appendChild(script)" +
                                     "})()"
                         )
@@ -285,7 +287,8 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
 
 
     private fun showInfoMessageDialog() {
-        val intent = Intent(this, NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy::class.java)
+        val intent =
+            Intent(this, NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy::class.java)
         startActivity(intent)
         finish()
     }
