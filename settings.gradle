@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "MultiApp2"
+rootProject.name = "MultiApp3"

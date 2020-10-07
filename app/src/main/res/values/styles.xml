@@ -1,7 +1,7 @@
 <resources>
 
-    <style name="AccdppTcdhecdmdce.Lacduncdcher" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimaryDark">@color/bldcsdcasxdcksx</item>
+    <style name="GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/trgnvlrtvbrtkg</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
 
@@ -11,9 +11,9 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="AccdppTcdhecdmdce.Lacduncdcher.Scdfplavfsh" parent="AccdppTcdhecdmdce.Lacduncdcher">
+    <style name="VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs" parent="GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf">
         <item name="android:windowBackground">@drawable/splsxcdascdxh_scrcdxeecdn</item>
-        <item name="colorPrimaryDark">@color/bldcsdcasxdcksx</item>
+        <item name="colorPrimaryDark">@color/trgnvlrtvbrtkg</item>
     </style>
 
 </resources>

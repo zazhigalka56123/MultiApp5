@@ -11,7 +11,7 @@
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@drawable/icon"
-        android:label="@string/asxdcpxsdp_nxsdaxsmxsde"
+        android:label="@string/vftgr_vgfrRB_gN_uym_iukM_MJUMk_SwdcEW_cd_sd"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
@@ -20,24 +20,24 @@
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/fsxdacsxebosxosxk_asxpp_ixsdd" />
+            android:value="@string/bgrb_Gbtgrb_gtybTY_bnT_Yn_YTn_YTHn" />
 
         <activity
             android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.MsxdaisxdcnAsxdcctisxdity"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher" />
+            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf" />
         <activity
             android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher.Scdfplavfsh" />
+            android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs" />
         <activity
             android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf.GsdcxamsdxceAsxdcsxdtivxsdcitsxdy"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher" />
+            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf" />
         <activity
             android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.sswxdpsxdlasxdsxsdch.SpsxlashsxaAcxstisxavxsitaxzsy"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/AccdppTcdhecdmdce.Lacduncdcher.Scdfplavfsh">
+            android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
