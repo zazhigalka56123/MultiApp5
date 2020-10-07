@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd
+package com.frfefreiefdrrefdre.jfrdofrdkfrefrr
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

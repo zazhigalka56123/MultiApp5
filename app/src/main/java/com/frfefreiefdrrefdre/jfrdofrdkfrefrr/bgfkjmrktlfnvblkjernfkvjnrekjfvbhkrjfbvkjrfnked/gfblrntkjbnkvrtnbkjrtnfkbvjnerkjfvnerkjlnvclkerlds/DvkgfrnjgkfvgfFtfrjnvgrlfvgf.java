@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf;
+package com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,9 +14,9 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
 
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R;
+import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R;
 
-public class GsdcxamsdxceAsxdcsxdtivxsdcitsxdy extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
+public class DvkgfrnjgkfvgfFtfrjnvgrlfvgf extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
     public GestureDetectorCompat gd;
 
@@ -26,8 +26,8 @@ public class GsdcxamsdxceAsxdcsxdtivxsdcitsxdy extends AppCompatActivity impleme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER_LANDSCAPE);
-        setContentView(R.layout.acdesctivcdity_gacdmcdfe);
-        ((FrameLayout) findViewById(R.id.idFlame)).addView(new GaxdcsxdcmsxdeVisxdesxdw(this));
+        setContentView(R.layout.rfvnrjfrkvbgrf_tvgfrnkjrgfv);
+        ((FrameLayout) findViewById(R.id.idFlame)).addView(new FfvgrnjkFhvffnjrtv(this));
 
         gd = new GestureDetectorCompat(this, this);
         gd.setOnDoubleTapListener(this);
@@ -67,28 +67,28 @@ public class GsdcxamsdxceAsxdcsxdtivxsdcitsxdy extends AppCompatActivity impleme
             if (Math.abs(diffX) > Math.abs(diffY)) {
                 if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
                     if (diffX > 0) {
-                        if (GaxdcsxdcmsxdeVisxdesxdw.activeVx != -1) {
-                            GaxdcsxdcmsxdeVisxdesxdw.vx = 1;
-                            GaxdcsxdcmsxdeVisxdesxdw.vy = 0;
+                        if (FfvgrnjkFhvffnjrtv.activeVx != -1) {
+                            FfvgrnjkFhvffnjrtv.vx = 1;
+                            FfvgrnjkFhvffnjrtv.vy = 0;
                         }
                     } else {
-                        if (GaxdcsxdcmsxdeVisxdesxdw.activeVx != 1) {
-                            GaxdcsxdcmsxdeVisxdesxdw.vx = -1;
-                            GaxdcsxdcmsxdeVisxdesxdw.vy = 0;
+                        if (FfvgrnjkFhvffnjrtv.activeVx != 1) {
+                            FfvgrnjkFhvffnjrtv.vx = -1;
+                            FfvgrnjkFhvffnjrtv.vy = 0;
                         }
                     }
                     result = true;
                 }
             } else if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                 if (diffY > 0) {
-                    if (GaxdcsxdcmsxdeVisxdesxdw.activeVy != -1) {
-                        GaxdcsxdcmsxdeVisxdesxdw.vx = 0;
-                        GaxdcsxdcmsxdeVisxdesxdw.vy = 1;
+                    if (FfvgrnjkFhvffnjrtv.activeVy != -1) {
+                        FfvgrnjkFhvffnjrtv.vx = 0;
+                        FfvgrnjkFhvffnjrtv.vy = 1;
                     }
                 } else {
-                    if (GaxdcsxdcmsxdeVisxdesxdw.activeVy != 1) {
-                        GaxdcsxdcmsxdeVisxdesxdw.vx = 0;
-                        GaxdcsxdcmsxdeVisxdesxdw.vy = -1;
+                    if (FfvgrnjkFhvffnjrtv.activeVy != 1) {
+                        FfvgrnjkFhvffnjrtv.vx = 0;
+                        FfvgrnjkFhvffnjrtv.vy = -1;
                     }
                 }
                 result = true;

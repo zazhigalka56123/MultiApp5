@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf;
+package com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,13 +10,13 @@ import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.view.View;
 
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R;
+import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R;
 
 import java.util.LinkedList;
 import java.util.Random;
 
 
-public class GaxdcsxdcmsxdeVisxdesxdw extends View {
+public class FfvgrnjkFhvffnjrtv extends View {
 
     Context cont;
 
@@ -60,7 +60,7 @@ public class GaxdcsxdcmsxdeVisxdesxdw extends View {
     private int appleX = -2;
     private int appleY = -2;
 
-    public GaxdcsxdcmsxdeVisxdesxdw(Context context) {
+    public FfvgrnjkFhvffnjrtv(Context context) {
         super(context);
         cont = context;
         p.setAntiAlias(true);
@@ -75,7 +75,7 @@ public class GaxdcsxdcmsxdeVisxdesxdw extends View {
 
         hrum = MediaPlayer.create(cont, R.raw.apple_sound);
 
-        GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.loadData(cont);
+        DvkgfrnjgkfvgfFtfrjnvgrlfvgf.loadData(cont);
 
         Timer t = new Timer();
         t.start();
@@ -202,9 +202,9 @@ public class GaxdcsxdcmsxdeVisxdesxdw extends View {
 
         if (crash) {
 
-            if (GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.maxScore < xm.size()) {
-                GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.maxScore = xm.size();
-                GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.saveData(cont);
+            if (DvkgfrnjgkfvgfFtfrjnvgrlfvgf.maxScore < xm.size()) {
+                DvkgfrnjgkfvgfFtfrjnvgrlfvgf.maxScore = xm.size();
+                DvkgfrnjgkfvgfFtfrjnvgrlfvgf.saveData(cont);
             }
 
             xm.clear();
@@ -298,6 +298,6 @@ public class GaxdcsxdcmsxdeVisxdesxdw extends View {
         p.setARGB(150, 255, 255, 255);
         p.setTextSize(size);
         canvas.drawText("score: " + (xm.size() - 2), 10, getHeight() - size - 13, p);
-        canvas.drawText("max score: " + (GsdcxamsdxceAsxdcsxdtivxsdcitsxdy.maxScore - 2), 10, getHeight() - 13, p);
+        canvas.drawText("max score: " + (DvkgfrnjgkfvgfFtfrjnvgrlfvgf.maxScore - 2), 10, getHeight() - 13, p);
     }
 }

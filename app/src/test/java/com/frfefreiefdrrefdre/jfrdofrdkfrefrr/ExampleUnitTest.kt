@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd
+package com.frfefreiefdrrefdre.jfrdofrdkfrefrr
 
 import org.junit.Test
 

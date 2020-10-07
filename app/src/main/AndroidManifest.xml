@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd">
+    package="com.frfefreiefdrrefdre.jfrdofrdkfrefrr">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -23,19 +23,19 @@
             android:value="@string/bgrb_Gbtgrb_gtybTY_bnT_Yn_YTn_YTHn" />
 
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.MsxdaisxdcnAsxdcctisxdity"
+            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn.FvfjgvngrfvGhmyknhyju"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf" />
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy"
+            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn.FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs" />
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf.GsdcxamsdxceAsxdcsxdtivxsdcitsxdy"
+            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.DvkgfrnjgkfvgfFtfrjnvgrlfvgf"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf" />
         <activity
-            android:name="com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.sswxdpsxdlasxdsxsdch.SpsxlashsxaAcxstisxavxsitaxzsy"
+            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.sswxdpsxdlasxdsxsdch.HfnnrvhjrfjFfvjrvjkgrfv"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs">
             <intent-filter>

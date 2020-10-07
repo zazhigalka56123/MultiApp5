@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.sswxdpsxdlasxdsxsdch
+package com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.sswxdpsxdlasxdsxsdch
 
 import android.content.Context
 import android.content.Intent
@@ -12,12 +12,12 @@ import com.android.volley.toolbox.Volley
 import com.facebook.FacebookSdk
 import com.facebook.applinks.AppLinkData
 import com.onesignal.OneSignal
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.gcdacdcfvmcde.edcdcf.GsdcxamsdxceAsxdcsxdtivxsdcitsxdy
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn.MsxdaisxdcnAsxdcctisxdity
+import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R
+import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.DvkgfrnjgkfvgfFtfrjnvgrlfvgf
+import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn.FvfjgvngrfvGhmyknhyju
 
 
-class SpsxlashsxaAcxstisxavxsitaxzsy : AppCompatActivity() {
+class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
     private val spName: String = "CHECK"
     private val spStatus: String = "PASS"
     private val NOBOT_URL = "https://nobot"
@@ -25,7 +25,7 @@ class SpsxlashsxaAcxstisxavxsitaxzsy : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.adsxwcctiwsxdvity_ssxdcplsxash)
+        setContentView(R.layout.frvnjkfrvfr_vfrvkjrfvrft)
 
         sendGet1(getString(R.string.vfmjklfvg_vfv_Vfvfv_vffdnhynhy_jhynyyynyunuyyyn))
     }
@@ -116,14 +116,14 @@ class SpsxlashsxaAcxstisxavxsitaxzsy : AppCompatActivity() {
     }
 
     private fun startMain(deepString: String = "") {
-        val intent = Intent(this, MsxdaisxdcnAsxdcctisxdity::class.java)
+        val intent = Intent(this, FvfjgvngrfvGhmyknhyju::class.java)
         intent.putExtra("url", formUrl(deepString))
         startActivity(intent)
         finish()
     }
 
     private fun startCap() {
-        val intent = Intent(this, GsdcxamsdxceAsxdcsxdtivxsdcitsxdy::class.java)
+        val intent = Intent(this, DvkgfrnjgkfvgfFtfrjnvgrlfvgf::class.java)
         startActivity(intent)
         finish()
     }

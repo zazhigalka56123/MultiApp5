@@ -1,4 +1,4 @@
-package com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.ucdsficddc.wdsecdc.mdxscadcidxcxn
+package com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -24,7 +24,7 @@ import androidx.annotation.RequiresApi
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.dicdamocdfncdfdfcd.sncdfacfdkcfecd.R
+import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -32,7 +32,7 @@ import java.util.*
 import android.util.Base64
 import android.util.Base64.encodeToString
 
-class MsxdaisxdcnAsxdcctisxdity : Activity() {
+class FvfjgvngrfvGhmyknhyju : Activity() {
     private var isConnected = true
     private var webView: WebView? = null
     private var mFilePathCallback: ValueCallback<Array<Uri>>? = null
@@ -43,7 +43,7 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
     @SuppressLint("SetJavaScriptEnabled", "HardwareIds")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actdwesividcty_mdxscaidcn)
+        setContentView(R.layout.rfgvrvgnrnvkrt_trgvmrkjbvgr)
 
         toScroll(false)
         window.decorView.viewTreeObserver.addOnGlobalLayoutListener {
@@ -290,7 +290,7 @@ class MsxdaisxdcnAsxdcctisxdity : Activity() {
 
     private fun showInfoMessageDialog() {
         val intent =
-            Intent(this, NeswxdtsxdcworsxdckFacxdlsexscdAcxscdtisxcdvixcdstsxdcy::class.java)
+            Intent(this, FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr::class.java)
         startActivity(intent)
         finish()
     }
