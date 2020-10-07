@@ -31,9 +31,16 @@
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs" />
         <activity
-            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.DvkgfrnjgkfvgfFtfrjnvgrlfvgf"
+            android:name=".bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf" />
+            android:screenOrientation="portrait"
+            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf">
+        </activity>
+        <activity
+            android:name=".bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.PuzzleActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf">
+        </activity>
         <activity
             android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.sswxdpsxdlasxdsxsdch.HfnnrvhjrfjFfvjrvjkgrfv"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
