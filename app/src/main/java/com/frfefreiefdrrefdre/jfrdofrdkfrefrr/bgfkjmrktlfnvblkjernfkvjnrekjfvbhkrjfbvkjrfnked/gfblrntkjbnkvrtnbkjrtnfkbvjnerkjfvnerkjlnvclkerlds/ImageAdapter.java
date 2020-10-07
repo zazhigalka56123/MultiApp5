@@ -26,7 +26,7 @@ public class ImageAdapter extends BaseAdapter {
         mContext = c;
         am = mContext.getAssets();
         try {
-            files  = am.list("img");
+            files = am.list("img");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -59,6 +59,7 @@ public class ImageAdapter extends BaseAdapter {
             public void run() {
                 new AsyncTask<Void, Void, Void>() {
                     private Bitmap bitmap;
+
                     @Override
                     protected Void doInBackground(Void... voids) {
                         bitmap = getPicFromAsset(imageView, files[position]);
@@ -82,7 +83,7 @@ public class ImageAdapter extends BaseAdapter {
         int targetW = imageView.getWidth();
         int targetH = imageView.getHeight();
 
-        if(targetW == 0 || targetH == 0) {
+        if (targetW == 0 || targetH == 0) {
             // view has no dimensions set
             return null;
         }
@@ -97,7 +98,7 @@ public class ImageAdapter extends BaseAdapter {
             int photoH = bmOptions.outHeight;
 
             // Determine how much to scale down the image
-            int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
+            int scaleFactor = Math.min(photoW / targetW, photoH / targetH);
 
             is.reset();
 
