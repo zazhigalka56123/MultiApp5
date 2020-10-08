@@ -14,7 +14,7 @@
         android:label="@string/vftgr_vgfrRB_gN_uym_iukM_MJUMk_SwdcEW_cd_sd"
         android:roundIcon="@drawable/gvtfrbhjrbfgjrktvb"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true"
         tools:replace="android:fullBackupContent">
 
