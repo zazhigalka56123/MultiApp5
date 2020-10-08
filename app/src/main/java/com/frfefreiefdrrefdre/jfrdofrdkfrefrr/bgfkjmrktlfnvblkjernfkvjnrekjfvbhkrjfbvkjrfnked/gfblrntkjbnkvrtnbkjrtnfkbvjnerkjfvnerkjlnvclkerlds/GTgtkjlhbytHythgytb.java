@@ -4,14 +4,14 @@ import android.content.Context;
 
 import androidx.appcompat.widget.AppCompatImageView;
 
-public class PuzzlePiece extends AppCompatImageView {
+public class GTgtkjlhbytHythgytb extends AppCompatImageView {
     public int xCoord;
     public int yCoord;
     public int pieceWidth;
     public int pieceHeight;
     public boolean canMove = true;
 
-    public PuzzlePiece(Context context) {
+    public GTgtkjlhbytHythgytb(Context context) {
         super(context);
     }
 }

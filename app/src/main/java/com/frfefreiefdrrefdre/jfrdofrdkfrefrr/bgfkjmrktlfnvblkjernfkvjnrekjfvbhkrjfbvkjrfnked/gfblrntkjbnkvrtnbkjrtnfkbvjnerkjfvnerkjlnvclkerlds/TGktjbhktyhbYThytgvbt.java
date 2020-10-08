@@ -34,15 +34,15 @@ import java.util.Random;
 
 import static java.lang.Math.abs;
 
-public class PuzzleActivity extends AppCompatActivity {
-    ArrayList<PuzzlePiece> pieces;
+public class TGktjbhktyhbYThytgvbt extends AppCompatActivity {
+    ArrayList<GTgtkjlhbytHythgytb> pieces;
     String mCurrentPhotoPath;
     String mCurrentPhotoUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_puzzle);
+        setContentView(R.layout.rfnvgkjvftgg_bftrbjnkgb);
 
         final RelativeLayout layout = findViewById(R.id.layout);
         final ImageView imageView = findViewById(R.id.imageView);
@@ -65,10 +65,10 @@ public class PuzzleActivity extends AppCompatActivity {
                     imageView.setImageURI(Uri.parse(mCurrentPhotoUri));
                 }
                 pieces = splitImage();
-                TouchListener touchListener = new TouchListener(PuzzleActivity.this);
+                GTgktbgtyHBythbytb touchListener = new GTgktbgtyHBythbytb(TGktjbhktyhbYThytgvbt.this);
                 // shuffle pieces order
                 Collections.shuffle(pieces);
-                for (PuzzlePiece piece : pieces) {
+                for (GTgtkjlhbytHythgytb piece : pieces) {
                     piece.setOnTouchListener(touchListener);
                     layout.addView(piece);
                     // randomize position, on the bottom of the screen
@@ -114,13 +114,13 @@ public class PuzzleActivity extends AppCompatActivity {
         }
     }
 
-    private ArrayList<PuzzlePiece> splitImage() {
+    private ArrayList<GTgtkjlhbytHythgytb> splitImage() {
         int piecesNumber = 12;
         int rows = 4;
         int cols = 3;
 
         ImageView imageView = findViewById(R.id.imageView);
-        ArrayList<PuzzlePiece> pieces = new ArrayList<>(piecesNumber);
+        ArrayList<GTgtkjlhbytHythgytb> pieces = new ArrayList<>(piecesNumber);
 
         // Get the scaled bitmap of the source image
         BitmapDrawable drawable = (BitmapDrawable) imageView.getDrawable();
@@ -159,7 +159,7 @@ public class PuzzleActivity extends AppCompatActivity {
 
                 // apply the offset to each piece
                 Bitmap pieceBitmap = Bitmap.createBitmap(croppedBitmap, xCoord - offsetX, yCoord - offsetY, pieceWidth + offsetX, pieceHeight + offsetY);
-                PuzzlePiece piece = new PuzzlePiece(getApplicationContext());
+                GTgtkjlhbytHythgytb piece = new GTgtkjlhbytHythgytb(getApplicationContext());
                 piece.setImageBitmap(pieceBitmap);
                 piece.xCoord = xCoord - offsetX + imageView.getLeft();
                 piece.yCoord = yCoord - offsetY + imageView.getTop();
@@ -297,7 +297,7 @@ public class PuzzleActivity extends AppCompatActivity {
     }
 
     private boolean isGameOver() {
-        for (PuzzlePiece piece : pieces) {
+        for (GTgtkjlhbytHythgytb piece : pieces) {
             if (piece.canMove) {
                 return false;
             }

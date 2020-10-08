@@ -9,12 +9,12 @@ import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 import static java.lang.StrictMath.abs;
 
-public class TouchListener implements View.OnTouchListener {
+public class GTgktbgtyHBythbytb implements View.OnTouchListener {
     private float xDelta;
     private float yDelta;
-    private PuzzleActivity activity;
+    private TGktjbhktyhbYThytgvbt activity;
 
-    public TouchListener(PuzzleActivity activity) {
+    public GTgktbgtyHBythbytb(TGktjbhktyhbYThytgvbt activity) {
         this.activity = activity;
     }
 
@@ -24,7 +24,7 @@ public class TouchListener implements View.OnTouchListener {
         float y = motionEvent.getRawY();
         final double tolerance = sqrt(pow(view.getWidth(), 2) + pow(view.getHeight(), 2)) / 10;
 
-        PuzzlePiece piece = (PuzzlePiece) view;
+        GTgtkjlhbytHythgytb piece = (GTgtkjlhbytHythgytb) view;
         if (!piece.canMove) {
             return true;
         }

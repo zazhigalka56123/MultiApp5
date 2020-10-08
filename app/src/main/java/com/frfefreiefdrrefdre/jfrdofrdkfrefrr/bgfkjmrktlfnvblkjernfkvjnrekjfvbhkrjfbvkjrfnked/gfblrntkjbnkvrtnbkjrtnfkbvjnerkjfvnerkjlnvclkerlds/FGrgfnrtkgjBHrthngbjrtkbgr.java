@@ -17,12 +17,12 @@ import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class ImageAdapter extends BaseAdapter {
+public class FGrgfnrtkgjBHrthngbjrtkbgr extends BaseAdapter {
     private Context mContext;
     private AssetManager am;
     private String[] files;
 
-    public ImageAdapter(Context c) {
+    public FGrgfnrtkgjBHrthngbjrtkbgr(Context c) {
         mContext = c;
         am = mContext.getAssets();
         try {
@@ -48,7 +48,7 @@ public class ImageAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             final LayoutInflater layoutInflater = LayoutInflater.from(mContext);
-            convertView = layoutInflater.inflate(R.layout.grid_element, null);
+            convertView = layoutInflater.inflate(R.layout.vfjnbgrntjbktg_bytnhbjyktby, null);
         }
 
         final ImageView imageView = convertView.findViewById(R.id.gridImageview);

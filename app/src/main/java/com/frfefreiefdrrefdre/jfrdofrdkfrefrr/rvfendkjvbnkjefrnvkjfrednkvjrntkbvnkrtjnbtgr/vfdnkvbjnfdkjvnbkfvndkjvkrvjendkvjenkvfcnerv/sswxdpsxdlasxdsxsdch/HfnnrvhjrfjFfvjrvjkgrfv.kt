@@ -13,7 +13,7 @@ import com.facebook.FacebookSdk
 import com.facebook.applinks.AppLinkData
 import com.onesignal.OneSignal
 import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R
-import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.MainActivity
+import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.GBtbmgtmblBGYtbjktgb
 import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn.FvfjgvngrfvGhmyknhyju
 
 
@@ -126,7 +126,7 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
     }
 
     private fun startCap() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, GBtbmgtmblBGYtbjktgb::class.java)
         startActivity(intent)
         finish()
     }
