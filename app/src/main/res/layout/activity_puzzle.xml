@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/trgnvlrtvbrtkg"
+    android:background="@drawable/vfnjjkfngkvjngfjkv"
     tools:context=".bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.PuzzleActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -22,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/trgnvlrtvbrtkg" />
+        app:srcCompat="@color/gtnbglkbmlkgtblkg" />
 
     <RelativeLayout
         android:id="@+id/layout"

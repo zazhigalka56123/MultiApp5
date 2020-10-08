@@ -11,9 +11,25 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
+    <style name="GTVRGRTGYHNHjmjkmjny.TGtvrjkvmlrf" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/gtnbglkbmlkgtblkg</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
     <style name="VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs" parent="GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf">
         <item name="android:windowBackground">@drawable/dcnjdfcfd_vfejnkfvf</item>
         <item name="colorPrimaryDark">@color/trgnvlrtvbrtkg</item>
+    </style>
+
+    <style name="VTVGGBBG.grtHYtnhtyNYV.GTRgntrkjnbvkrt" parent="GTVRGRTGYHNHjmjkmjny.TGtvrjkvmlrf">
+        <item name="android:windowBackground">@drawable/dcnjdfcfd_vfejnkfvf</item>
+        <item name="colorPrimaryDark">@color/gtnbglkbmlkgtblkg</item>
     </style>
 
 </resources>

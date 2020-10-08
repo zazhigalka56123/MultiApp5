@@ -10,9 +10,9 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/gvtfrbhjrbfgjrktvb"
         android:label="@string/vftgr_vgfrRB_gN_uym_iukM_MJUMk_SwdcEW_cd_sd"
-        android:roundIcon="@drawable/icon"
+        android:roundIcon="@drawable/gvtfrbhjrbfgjrktvb"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         android:usesCleartextTraffic="true"
@@ -44,7 +44,7 @@
         <activity
             android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.sswxdpsxdlasxdsxsdch.HfnnrvhjrfjFfvjrvjkgrfv"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs">
+            android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.GTRgntrkjnbvkrt">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
