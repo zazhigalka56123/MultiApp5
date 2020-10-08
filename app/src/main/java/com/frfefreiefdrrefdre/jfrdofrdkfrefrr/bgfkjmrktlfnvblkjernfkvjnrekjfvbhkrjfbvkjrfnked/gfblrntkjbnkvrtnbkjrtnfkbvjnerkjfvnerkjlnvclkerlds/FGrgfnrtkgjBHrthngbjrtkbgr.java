@@ -44,7 +44,6 @@ public class FGrgfnrtkgjBHrthngbjrtkbgr extends BaseAdapter {
         return 0;
     }
 
-    // create a new ImageView for each item referenced by the Adapter
     public View getView(final int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             final LayoutInflater layoutInflater = LayoutInflater.from(mContext);
@@ -53,7 +52,6 @@ public class FGrgfnrtkgjBHrthngbjrtkbgr extends BaseAdapter {
 
         final ImageView imageView = convertView.findViewById(R.id.gridImageview);
         imageView.setImageBitmap(null);
-        // run image related code after the view was laid out
         imageView.post(new Runnable() {
             @Override
             public void run() {
@@ -79,30 +77,25 @@ public class FGrgfnrtkgjBHrthngbjrtkbgr extends BaseAdapter {
     }
 
     private Bitmap getPicFromAsset(ImageView imageView, String assetName) {
-        // Get the dimensions of the View
         int targetW = imageView.getWidth();
         int targetH = imageView.getHeight();
 
         if (targetW == 0 || targetH == 0) {
-            // view has no dimensions set
             return null;
         }
 
         try {
             InputStream is = am.open("img/" + assetName);
-            // Get the dimensions of the bitmap
             BitmapFactory.Options bmOptions = new BitmapFactory.Options();
             bmOptions.inJustDecodeBounds = true;
             BitmapFactory.decodeStream(is, new Rect(-1, -1, -1, -1), bmOptions);
             int photoW = bmOptions.outWidth;
             int photoH = bmOptions.outHeight;
 
-            // Determine how much to scale down the image
             int scaleFactor = Math.min(photoW / targetW, photoH / targetH);
 
             is.reset();
 
-            // Decode the image file into a Bitmap sized to fill the View
             bmOptions.inJustDecodeBounds = false;
             bmOptions.inSampleSize = scaleFactor;
             bmOptions.inPurgeable = true;
