@@ -25,7 +25,7 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.frvnjkfrvfr_vfrvkjrfvrft)
+        setContentView(R.layout.vfimflvlkgfblvmgfrlkbmvfrt)
 
         sendGet1(getString(R.string.vfmjklfvg_vfv_Vfvfv_vffdnhynhy_jhynyyynyunuyyyn))
     }
@@ -85,7 +85,10 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
                                 sendGet(getString(R.string.refhjvfjvj_gbvmgkbtrg))
                             } else {
                                 val deepData = it.targetUri
-                                sendGet(getString(R.string.refhjvfjvj_gbvmgkbtrg), deepData?.query.toString())
+                                sendGet(
+                                    getString(R.string.refhjvfjvj_gbvmgkbtrg),
+                                    deepData?.query.toString()
+                                )
                             }
                         }
                     }

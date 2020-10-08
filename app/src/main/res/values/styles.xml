@@ -28,8 +28,17 @@
     </style>
 
     <style name="VTVGGBBG.grtHYtnhtyNYV.GTRgntrkjnbvkrt" parent="GTVRGRTGYHNHjmjkmjny.TGtvrjkvmlrf">
-        <item name="android:windowBackground">@drawable/dcnjdfcfd_vfejnkfvf</item>
+        <item name="android:windowBackground">@color/gtnbglkbmlkgtblkg</item>
         <item name="colorPrimaryDark">@color/gtnbglkbmlkgtblkg</item>
+    </style>
+
+    <style name="GTtgjnbktrjtgr" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/hbtykglhbmlytn</item>
+    </style>
+
+    <style name="GTevgftjgvrtmgkvf" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 
 </resources>
