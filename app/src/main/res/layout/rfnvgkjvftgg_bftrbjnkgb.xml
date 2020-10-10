@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/vfnjjkfngkvjngfjkv"
-    tools:context=".bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.TGktjbhktyhbYThytgvbt">
+    android:background="@drawable/jdefrnbkjfckrjvfrvvtrbv"
+    tools:context=".gbvlktngbkrtgnlkglb.vftglktnlvkfrjnvkgrenvkjnerlk.TGktjbhktyhbYThytgvbt">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView"

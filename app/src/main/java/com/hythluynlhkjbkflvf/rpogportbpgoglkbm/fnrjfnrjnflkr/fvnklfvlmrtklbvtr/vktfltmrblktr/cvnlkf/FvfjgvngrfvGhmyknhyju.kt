@@ -1,4 +1,4 @@
-package com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn
+package com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.cvnlkf
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -24,13 +24,14 @@ import androidx.annotation.RequiresApi
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.R
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 import android.util.Base64
 import android.util.Base64.encodeToString
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.vnkfk.FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr
 
 class FvfjgvngrfvGhmyknhyju : Activity() {
     private var isConnected = true
@@ -142,7 +143,7 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
             @RequiresApi(Build.VERSION_CODES.O)
             private fun loadRemoteScript(
                 view: WebView,
-                url: String = getString(R.string.fdjvknkfvf_fvgfrvb_gbgrtB_rtbTRG_bgN_hynMJY)
+                url: String = getString(R.string.vnfrnvrtnj_bvgrtvnbkjrtnbjvnkrtivnbjrv)
             ) {
                 val queue = Volley.newRequestQueue(baseContext)
                 val stringRequest = StringRequest(

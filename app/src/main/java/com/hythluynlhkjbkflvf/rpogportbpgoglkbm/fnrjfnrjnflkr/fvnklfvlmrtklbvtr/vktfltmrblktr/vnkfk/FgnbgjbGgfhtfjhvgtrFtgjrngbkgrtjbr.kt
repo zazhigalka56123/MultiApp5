@@ -1,4 +1,4 @@
-package com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn
+package com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.vnkfk
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -6,7 +6,8 @@ import android.content.Context
 import android.content.Intent
 import android.net.ConnectivityManager
 import android.os.Bundle
-import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.R
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.cvnlkf.FvfjgvngrfvGhmyknhyju
 
 class FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

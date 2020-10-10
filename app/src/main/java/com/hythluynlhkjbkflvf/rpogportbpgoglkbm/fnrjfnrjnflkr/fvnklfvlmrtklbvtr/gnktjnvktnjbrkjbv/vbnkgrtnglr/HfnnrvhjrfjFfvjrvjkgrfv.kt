@@ -1,4 +1,4 @@
-package com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.sswxdpsxdlasxdsxsdch
+package com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.gnktjnvktnjbrkjbv.vbnkgrtnglr
 
 import android.content.Context
 import android.content.Intent
@@ -12,9 +12,9 @@ import com.android.volley.toolbox.Volley
 import com.facebook.FacebookSdk
 import com.facebook.applinks.AppLinkData
 import com.onesignal.OneSignal
-import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.R
-import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.GBtbmgtmblBGYtbjktgb
-import com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn.FvfjgvngrfvGhmyknhyju
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.R
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.gbvlktngbkrtgnlkglb.vftglktnlvkfrjnvkgrenvkjnerlk.GBtbmgtmblBGYtbjktgb
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.cvnlkf.FvfjgvngrfvGhmyknhyju
 
 
 class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
@@ -27,7 +27,7 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.vfimflvlkgfblvmgfrlkbmvfrt)
 
-        sendGet1(getString(R.string.vfmjklfvg_vfv_Vfvfv_vffdnhynhy_jhynyyynyunuyyyn))
+        sendGet1(getString(R.string.grtvmnbrtmnbkjt_vgtrnbjtkgybmnkty_bgtnbjtg))
     }
 
     private fun sendGet(url: String, deepString: String = "") {
@@ -82,11 +82,11 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
                             this
                         ) {
                             if (it == null) {
-                                sendGet(getString(R.string.refhjvfjvj_gbvmgkbtrg))
+                                sendGet(getString(R.string.vnrgjnkjrgb_bbgtrjkbvnjknrt))
                             } else {
                                 val deepData = it.targetUri
                                 sendGet(
-                                    getString(R.string.refhjvfjvj_gbvmgkbtrg),
+                                    getString(R.string.vnrgjnkjrgb_bbgtrjkbvnjknrt),
                                     deepData?.query.toString()
                                 )
                             }
@@ -108,7 +108,7 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
     }
 
     private fun formUrl(deepString: String): String {
-        var url = getString(R.string.vfrjkfv_Vfttvbg_gbfrt_vbrtgvb)
+        var url = getString(R.string.vjnfrkjvtnkgr_tvbtgrnhjvbtkgjrbv_rtbvrkjnb)
         url += "?source=${getBundle()}"
 
         if (deepString != "") {

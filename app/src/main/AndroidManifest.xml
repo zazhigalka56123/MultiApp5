@@ -1,56 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.frfefreiefdrrefdre.jfrdofrdkfrefrr">
-
+    package="com.hythluynlhkjbkflvf.rpogportbpgoglkbm">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@drawable/vrfvjhbhefrjvbjf"
-        android:label="@string/vftgr_vgfrRB_gN_uym_iukM_MJUMk_SwdcEW_cd_sd"
-        android:roundIcon="@drawable/vrfvjhbhefrjvbjf"
+        android:icon="@drawable/fcrekjnvfjkrntkv"
+        android:label="@string/bybytb_nhnyhn_NhnN_UYnyjN_hmnujy"
+        android:roundIcon="@drawable/fcrekjnvfjkrntkv"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true"
         tools:replace="android:fullBackupContent">
-
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/bgrb_Gbtgrb_gtybTY_bnT_Yn_YTn_YTHn" />
-
+            android:value="@string/vhfrtbjhvbrjt_vtgrbvtkrjhnkvbkrt_vrgbvhjrt" />
         <activity
-            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn.FvfjgvngrfvGhmyknhyju"
+            android:name="com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.gnktjnvktnjbrkjbv.vbnkgrtnglr.HfnnrvhjrfjFfvjrvjkgrfv"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf" />
-        <activity
-            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.mdxscadcidxcxn.FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr"
-            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/VTVGGBBG.grtHYtnhtyNYV.RTBBGTNHYdcs" />
-        <activity
-            android:name=".bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.GBtbmgtmblBGYtbjktgb"
-            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:screenOrientation="portrait"
-            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf">
-        </activity>
-        <activity
-            android:name=".bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.TGktjbhktyhbYThytgvbt"
-            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TYHNJMUbfdbf">
-        </activity>
-        <activity
-            android:name="com.frfefreiefdrrefdre.jfrdofrdkfrefrr.rvfendkjvbnkjefrnvkjfrednkvjrntkbvnkrtjnbtgr.vfdnkvbjnfdkjvnbkfvndkjvkrvjendkvjenkvfcnerv.sswxdpsxdlasxdsxsdch.HfnnrvhjrfjFfvjrvjkgrfv"
-            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
-            android:theme="@style/GTVRGRTGYHNHjmjkmjny.TGtvrjkvmlrf">
+            android:theme="@style/BHTNBhynyjhumn.thyTJUYjtokfnoiyf">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.cvnlkf.FvfjgvngrfvGhmyknhyju"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/NythnmbylkthbnhYnyhun.gTRHytfewrgt" />
+        <activity
+            android:name="com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.vnkfk.FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/kvmkgfrjmtblkgtbHNTnkytghb.VGTRBtyhnhy.btRNBHTY.btrYNBHTYhjn" />
+        <activity
+            android:name="com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.kfrlvmgtlkrmgbltrg.VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
+            android:theme="@style/NythnmbylkthbnhYnyhun.gTRHytfewrgt">
+        </activity>
     </application>
-
 </manifest>

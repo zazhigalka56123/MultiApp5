@@ -2,10 +2,10 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
     android:opacity="opaque">
 
-    <item android:drawable="@color/trgnvlrtvbrtkg" />
+    <item android:drawable="@color/nvjkrtnvjkgrt_vrtbnjgtb" />
 
     <item
-        android:drawable="@drawable/vjfnivjnjfv"
+        android:drawable="@drawable/cbrfebcvjfrevjkfr"
         android:gravity="center" />
 
 </layer-list>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/trgnvlrtvbrtkg"
-    tools:context=".bgfkjmrktlfnvblkjernfkvjnrekjfvbhkrjfbvkjrfnked.gfblrntkjbnkvrtnbkjrtnfkbvjnerkjfvnerkjlnvclkerlds.DvkgfrnjgkfvgfFtfrjnvgrlfvgf">
+    android:background="@color/nvjkrtnvjkgrt_vrtbnjgtb"
+    tools:context=".gbvlktngbkrtgnlkglb.vftglktnlvkfrjnvkgrenvkjnerlk.DvkgfrnjgkfvgfFtfrjnvgrlfvgf">
 
     <FrameLayout
         android:id="@+id/idFlame"
