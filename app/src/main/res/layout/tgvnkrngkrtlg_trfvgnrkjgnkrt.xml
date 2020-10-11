@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gtnbglkbmlkgtblkg"
+    android:background="@color/efnerkjnvfrk_gtrnvkbrtjn"
     tools:context=".fnrjfnrjnflkr.fvnklfvlmrtklbvtr.gnktjnvktnjbrkjbv.vbnkgrtnglr.HfnnrvhjrfjFfvjrvjkgrfv">
-
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/image"
         android:layout_width="100dp"
@@ -17,9 +16,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </pl.droidsonroids.gif.GifImageView>
-
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/text"
         android:layout_width="match_parent"
@@ -27,10 +24,9 @@
         android:layout_below="@id/image"
         android:layout_marginBottom="160dp"
         android:gravity="center"
-        android:text="Loading..."
+        android:text="@string/rfvkjrnkvgjrntkfg_gtrnbjntkrjbgrtb"
         android:textColor="@color/nvjkrtnvjkgrt_vrtbnjgtb"
-        android:textSize="25sp"
+        android:textSize="@dimen/fvkdnbkjgfb_bgfbgf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
