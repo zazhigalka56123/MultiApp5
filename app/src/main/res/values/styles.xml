@@ -26,6 +26,9 @@
     </style>
     <style name="kvmkgfrjmtblkgtbHNTnkytghb.VGTRBtyhnhy.btRNBHTY.btrYNBHTYhjn" parent="NythnmbylkthbnhYnyhun.gTRHytfewrgt">
         <item name="colorPrimaryDark">@color/nvjkrtnvjkgrt_vrtbnjgtb</item>
-        <item name="android:windowBackground">@drawable/fvnvgtrkbkgt_trbhtynbgthbh</item>
+    </style>
+    <style name="frrnejvnfrjvvFTRvgtrfv" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/gvtrnhvjrtf_btrbtr</item>
     </style>
 </resources>
