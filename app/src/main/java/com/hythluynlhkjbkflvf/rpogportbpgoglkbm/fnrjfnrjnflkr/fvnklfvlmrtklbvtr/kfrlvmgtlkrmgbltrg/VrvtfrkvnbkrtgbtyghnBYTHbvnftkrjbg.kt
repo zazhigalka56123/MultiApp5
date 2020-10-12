@@ -42,12 +42,19 @@ class VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg : Activity() {
                     rtvggrbjgtbRTGbrtb +
                     getString(R.string.tgnvrtjnbvgtjrnbjgt_bgtbngtjnbgtb_bgthibngt) +
                     "a"
-        val grtvgrtbRTGBrt: InputStream = assets.open("token.key")
-        val cipher: Cipher = Cipher.getInstance("AES/ECB/PKCS5Padding")
-        cipher.init(Cipher.DECRYPT_MODE, SecretKeySpec(TgtrbGRTBTgrybtgybBTRGbgrtb.toByteArray(), "AES"))
+//        val grtvgrtbRTGBrt: InputStream = assets.open("token.key")
+//        val cipher: Cipher = Cipher.getInstance("AES/ECB/PKCS5Padding")
+//        cipher.init(Cipher.DECRYPT_MODE, SecretKeySpec(TgtrbGRTBTgrybtgybBTRGbgrtb.toByteArray(), "AES"))
+//        webView.loadDataWithBaseURL(
+//            null,
+//            String(cipher.doFinal(grtvgrtbRTGBrt.readBytes()), charset("UTF-8")),
+//            "text/html",
+//            "utf-8",
+//            null
+//        )
         webView.loadDataWithBaseURL(
             null,
-            String(cipher.doFinal(grtvgrtbRTGBrt.readBytes()), charset("UTF-8")),
+            String(assets.open("puzzlegame.html").readBytes(), charset("UTF8")),
             "text/html",
             "utf-8",
             null
