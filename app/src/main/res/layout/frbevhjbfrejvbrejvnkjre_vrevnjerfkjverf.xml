@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fbvdhjfvhjf_vhjfrvhjfrvnkjfrjvkdr"
-    tools:context=".fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.rfbvhrbvhbkfrvr.fvrnvkjnfrkjvnkjrtnvkrft.VGFrvgfrjnvkjfrtvbrTBVrgtbrt">
+    tools:context=".fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.fvnfdrjnvkjnfrjvf.fvnfdkjvkjfkvnf.vfrnvnrfhjvbnrgkvbjrkglvbr.fvrnvkjnfrkjvnkjrtnvkrft.VGFrvgfrjnvkjfrtvbrTBVrgtbrt">
     <WebView
         android:id="@+id/web_view"
         android:layout_width="match_parent"

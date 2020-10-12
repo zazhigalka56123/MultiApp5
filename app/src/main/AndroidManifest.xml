@@ -28,15 +28,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.rfbvhrbvhbkfrvr.fvrnvkjnfrkjvnkjrtnvkrft.VGFrvgfrjnvkjfrtvbrTBVrgtbrt"
+            android:name="com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.fvnfdrjnvkjnfrjvf.fvnfdkjvkjfkvnf.vfrnvnrfhjvbnrgkvbjrkglvbr.fvrnvkjnfrkjvnkjrtnvkrft.VGFrvgfrjnvkjfrtvbrTBVrgtbrt"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/VFrvrfntvbjnrgtjblkrtgmbkltg.VTRvrjuntfvbrntkflbvlr" />
         <activity
-            android:name="com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.rfbvhrbvhbkfrvr.vfrnvnrfhjvbnrgkvbjrkglvbr.VFrvnfrvjfnrjkvfrvFRvfrbvbhfrjvvFRTvfrtbtrb"
+            android:name="com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.fvnfdrjnvkjnfrjvf.fvnfdkjvkjfkvnf.vfrnvnrfhjvbnrgkvbjrkglvbr.VFrvnfrvjfnrjkvfrvFRvfrbvbhfrjvvFRTvfrtbtrb"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/VFfgnvkjbgfnbjkg.GFbgrnfkbjfrt.BGRTnkrtjkvbfrt" />
         <activity
-            android:name="com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.frvkjrfnvkjnrfjkvnkrft.VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg"
+            android:name="com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.fvnfdrjnvkjnfrjvf.fvnfdkjvkjfkvnf.VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"
             android:theme="@style/VFrvrfntvbjnrgtjblkrtgmbkltg.VTRvrjuntfvbrntkflbvlr">
         </activity>

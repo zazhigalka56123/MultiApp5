@@ -10,10 +10,9 @@ import com.onesignal.OneSignal
 import com.android.volley.toolbox.StringRequest
 import com.facebook.FacebookSdk
 import android.content.Intent
-import com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.frvkjrfnvkjnrfjkvnkrft.VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg
 import com.facebook.applinks.AppLinkData
 import com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.R
-import com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.rfbvhrbvhbkfrvr.fvrnvkjnfrkjvnkjrtnvkrft.VGFrvgfrjnvkjfrtvbrTBVrgtbrt
+import com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.fvnfdrjnvkjnfrjvf.fvnfdkjvkjfkvnf.vfrnvnrfhjvbnrgkvbjrkglvbr.fvrnvkjnfrkjvnkjrtnvkrft.VGFrvgfrjnvkjfrtvbrTBVrgtbrt
 
 class VFkfnvjfvnfnvkjfTBVgrftvbjfrntvb : AppCompatActivity() {
     private val spName: String = "CHECK"
