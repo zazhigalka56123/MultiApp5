@@ -11,7 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerInParent="true"
-        android:background="@drawable/nvfrekjnvkjfnrevkjkfrvfr_rfevfrvf"
+        android:background="@drawable/vfrnvkrnfkjbgrtblkgtvrfjnvkjfr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
