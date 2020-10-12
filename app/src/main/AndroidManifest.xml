@@ -9,7 +9,7 @@
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@drawable/vfnvjfnjkvd_fvjnfjnvjnfkjv_vfrienvifr"
-        android:label="@string/fkrjnjvkjdvjfkrv_vrfbhjvrgfhbvjkr_bvgtrbvkgrtjvnbkjgrt"
+        android:label="@string/efvrjkjfrnvjkfrvkf_rvfonkfjrnvkjre_efrvhbkjfrvfr"
         android:roundIcon="@drawable/vfnvjfnjkvd_fvjnfjnvjnfkjv_vfrienvifr"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
@@ -17,7 +17,7 @@
         tools:replace="android:fullBackupContent">
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/fjvbfkdjgvbkjgf_bgfrtvbrtfnvjrtf_trhgviturghbut" />
+            android:value="@string/fvjkjfrnkjnfrkvjfr_vfrjnvkjfrnvjfrkv_vfrvefrkvkjfrv" />
         <activity
             android:name="com.tfvbnrtlkbnlkrtmblkmrtlkb.rlvkgntrvbmrelkmvlnrekv.fbuvbfbvjkfbvfd.frcbfvhjfrhjvbfr.fvnfdrjnvkjnfrjvf.fvnfdkjvkjfkvnf.VFkfnvjfvnfnvkjfTBVgrftvbjfrntvb"
             android:configChanges="orientation|screenSize|keyboardHidden|keyboard"

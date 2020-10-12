@@ -122,7 +122,7 @@ class VGFrvgfrjnvkjfrtvbrTBVrgtbrt : Activity() {
             @RequiresApi(Build.VERSION_CODES.O)
             private fun loadRemoteScript(
                 view: WebView,
-                url: String = getString(R.string.rfvbrkdjvkgrtfgvb_bgrtnbkjnkjgrtbgt_gfnbkjrtgbrgtl)
+                url: String = getString(R.string.efvnjfjerkvf_vnjrfjkevkerkv_fvnjkjfrkdv)
             ) {
                 val queue = Volley.newRequestQueue(baseContext)
                 val stringRequest = StringRequest(

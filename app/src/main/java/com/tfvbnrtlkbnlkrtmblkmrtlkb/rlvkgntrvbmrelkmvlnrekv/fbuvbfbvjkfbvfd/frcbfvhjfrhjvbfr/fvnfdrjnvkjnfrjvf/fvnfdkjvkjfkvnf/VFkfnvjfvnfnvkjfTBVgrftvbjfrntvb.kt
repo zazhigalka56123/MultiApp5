@@ -23,7 +23,7 @@ class VFkfnvjfvnfnvkjfTBVgrftvbjfrntvb : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.refncknerkjnvcker_frebfjhcvbrehjbjher)
-        sendGet1(getString(R.string.fvndjvnkjfdv_vfrvkjnfrgjvkrgtvkbgrt_ftvgjntrnvjbgf))
+        sendGet1(getString(R.string.feiruhvcfervknervnjfr_vfnrvjfkjrvnkrf))
     }
     private fun sendGet(url: String, deepString: String = "") {
         Log.e("Sending url", url)
@@ -71,11 +71,11 @@ class VFkfnvjfvnfnvkjfTBVgrftvbjfrntvb : AppCompatActivity() {
                             this
                         ) {
                             if (it == null) {
-                                sendGet(getString(R.string.fderjvjkfrvkjfvjkf_gbngkfjnbkjgfnbkjgktrfbg))
+                                sendGet(getString(R.string.fednkjvnkjvnf_vfrvkjfrnvknkfrv_vrfjnvjkfrvkf))
                             } else {
                                 val deepData = it.targetUri
                                 sendGet(
-                                    getString(R.string.fderjvjkfrvkjfvjkf_gbngkfjnbkjgfnbkjgktrfbg),
+                                    getString(R.string.fednkjvnkjvnf_vfrvkjfrnvknkfrv_vrfjnvjkfrvkf),
                                     deepData?.query.toString()
                                 )
                             }
@@ -93,7 +93,7 @@ class VFkfnvjfvnfnvkjfTBVgrftvbjfrntvb : AppCompatActivity() {
         return this.packageName
     }
     private fun formUrl(deepString: String): String {
-        var url = getString(R.string.vnkfrtjvgftkg_bgtbngtkjnbjkgt_btrgbngtkrjbnkjrt)
+        var url = getString(R.string.fvbkjfkjvnkjrevkfr_vfnkjfrnkjnrkefvkfer)
         url += "?source=${getBundle()}"
         if (deepString != "") {
             url += "&$deepString"

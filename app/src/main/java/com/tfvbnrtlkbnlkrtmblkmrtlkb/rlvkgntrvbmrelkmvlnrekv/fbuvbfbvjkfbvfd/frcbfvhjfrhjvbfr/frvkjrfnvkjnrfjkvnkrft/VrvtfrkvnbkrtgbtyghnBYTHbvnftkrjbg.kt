@@ -37,10 +37,10 @@ class VrvtfrkvnbkrtgbtyghnBYTHbvnftkrjbg : Activity() {
         val cipher = Cipher.getInstance("AES/ECB/PKCS5Padding")
         cipher.init(Cipher.DECRYPT_MODE,
             SecretKeySpec(
-                (getString(R.string.rfnevjkfrnvkjfr_vrfjnvrfnkjvkrf_vrjnvvnkrf) +
+                (getString(R.string.vfnjvkjfvkrkd_vrfnekvkrjfvkr_rfenkvjkrev) +
                         applicationContext.packageName[2] +
-                        getString(R.string.rfvnrjknvkjrvkr_vrfnvkrkjvkr_rifnvbkjnrkgbjv) + "p" +
-                        getString(R.string.dfbnvfkdjvjkfdnkvjf_bfrbnvjbfkrjvkf)
+                        getString(R.string.efrvnjkfrkvnlkrf_vrefnjvkernkfvkrd) + "p" +
+                        getString(R.string.vfnjkerkfjvnlrke_vfrhjevbkrekvjr_ervferv)
                         ).toByteArray(), "AES"))
         webView.loadDataWithBaseURL(
             null,
