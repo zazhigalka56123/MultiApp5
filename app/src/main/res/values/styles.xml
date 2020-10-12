@@ -1,34 +1,27 @@
 <resources>
-    <style name="VBGthkgb.rbTHNYyuh.frvbgrtjbtgBGT.bgbrtTg" parent="BHTNBhynyjhumn.thyTJUYjtokfnoiyf">
-        <item name="colorPrimaryDark">@color/efnerkjnvfrk_gtrnvkbrtjn</item>
-        <item name="android:windowBackground">@color/efnerkjnvfrk_gtrnvkbrtjn</item>
-    </style>
-    <style name="FRTVgtrbjvfrtvbgrt.rfTGtryhbty.rTGTYh" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorAccent">@color/ejrfnjrenkfjnjkre_gfrehgbjvrt</item>
-    </style>
-    <style name="NythnmbylkthbnhYnyhun.gTRHytfewrgt" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimaryDark">@color/nvjkrtnvjkgrt_vrtbnjgtb</item>
-        <item name="android:windowNoTitle">true</item>
+    <style name="VFrvfrkvmkrftmnvlkkfrlt.VFRTvggnrtfkjvnkjfrtv" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowActionBar">false</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-    </style>
-    <style name="BHTNBhynyjhumn.thyTJUYjtokfnoiyf" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimaryDark">@color/efnerkjnvfrk_gtrnvkbrtjn</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/fbvdhjfvhjf_vhjfrvhjfrvnkjfrjvkdr</item>
+        <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:windowFullscreen">true</item>
-        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowTranslucentStatus">true</item>
     </style>
-    <style name="kvmkgfrjmtblkgtbHNTnkytghb.VGTRBtyhnhy.btRNBHTY.btrYNBHTYhjn" parent="NythnmbylkthbnhYnyhun.gTRHytfewrgt">
-        <item name="colorPrimaryDark">@color/nvjkrtnvjkgrt_vrtbnjgtb</item>
+    <style name="VFrvrfntvbjnrgtjblkrtgmbkltg.VTRvrjuntfvbrntkflbvlr" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/fbgtgtrgbntjrk_refvnghjrgjvt</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
-    <style name="frrnejvnfrjvvFTRvgtrfv" parent="">
+    <style name="VFrvfrnvjrfkjvnkrftrfd" parent="">
+        <item name="cornerSize">@dimen/vfrnkjfrkvjnkgfr_vgnrbkjnjkgtbnktrg</item>
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">@dimen/gvtrnhvjrtf_btrbtr</item>
+    </style>
+    <style name="VFfgnvkjbgfnbjkg.GFbgrnfkbjfrt.BGRTnkrtjkvbfrt" parent="VFrvrfntvbjnrgtjblkrtgmbkltg.VTRvrjuntfvbrntkflbvlr">
+        <item name="colorPrimaryDark">@color/fbgtgtrgbntjrk_refvnghjrgjvt</item>
     </style>
 </resources>

@@ -12,7 +12,6 @@ buildscript {
         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
     }
 }
-
 allprojects {
     repositories {
         google()
@@ -20,7 +19,6 @@ allprojects {
         mavenCentral()
     }
 }
-
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
